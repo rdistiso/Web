@@ -1,0 +1,35 @@
+@rdistiso ➜ /workspaces/launchiine (master) $ DEVKITPRO=/opt/devkitpro/ DEVKITPPC=/opt/devkitpro/devkitPPC make -j2
+leftArrow.png
+layoutSwitchButton.png
+settingsButton.png
+rightArrow.png
+noGameIcon.png
+iconEmpty.png
+bgMusic.ogg
+button_click.mp3
+settings_click_2.mp3
+font.ttf
+entry.cpp
+Application.cpp
+In file included from /workspaces/launchiine/src/gui/Gui.h:18,
+                 from /workspaces/launchiine/src/menu/MainDrcButtonsFrame.h:17,
+                 from /workspaces/launchiine/src/menu/MainWindow.h:21,
+                 from /workspaces/launchiine/src/Application.h:17,
+                 from /workspaces/launchiine/src/entry.cpp:1:
+/workspaces/launchiine/src/gui/GameBgImage.h:4:10: fatal error: gui/GuiImageAsync.h: No such file or directory
+    4 | #include <gui/GuiImageAsync.h>
+      |          ^~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+In file included from /workspaces/launchiine/src/gui/Gui.h:18,
+                 from /workspaces/launchiine/src/menu/MainDrcButtonsFrame.h:17,
+                 from /workspaces/launchiine/src/menu/MainWindow.h:21,
+                 from /workspaces/launchiine/src/Application.h:17,
+                 from /workspaces/launchiine/src/Application.cpp:1:
+/workspaces/launchiine/src/gui/GameBgImage.h:4:10: fatal error: gui/GuiImageAsync.h: No such file or directory
+    4 | #include <gui/GuiImageAsync.h>
+      |          ^~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+make[1]: *** [/opt/devkitpro/devkitPPC/base_rules:15: entry.o] Error 1
+make[1]: *** Waiting for unfinished jobs....
+make[1]: *** [/opt/devkitpro/devkitPPC/base_rules:15: Application.o] Error 1
+make: *** [Makefile:110: build] Error 2
