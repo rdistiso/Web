@@ -1,35 +1,387 @@
-@rdistiso ➜ /workspaces/launchiine (master) $ DEVKITPRO=/opt/devkitpro/ DEVKITPPC=/opt/devkitpro/devkitPPC make -j2
-leftArrow.png
-layoutSwitchButton.png
-settingsButton.png
-rightArrow.png
-noGameIcon.png
-iconEmpty.png
-bgMusic.ogg
-button_click.mp3
-settings_click_2.mp3
-font.ttf
-entry.cpp
-Application.cpp
-In file included from /workspaces/launchiine/src/gui/Gui.h:18,
-                 from /workspaces/launchiine/src/menu/MainDrcButtonsFrame.h:17,
-                 from /workspaces/launchiine/src/menu/MainWindow.h:21,
-                 from /workspaces/launchiine/src/Application.h:17,
-                 from /workspaces/launchiine/src/entry.cpp:1:
-/workspaces/launchiine/src/gui/GameBgImage.h:4:10: fatal error: gui/GuiImageAsync.h: No such file or directory
-    4 | #include <gui/GuiImageAsync.h>
-      |          ^~~~~~~~~~~~~~~~~~~~~
-compilation terminated.
-In file included from /workspaces/launchiine/src/gui/Gui.h:18,
-                 from /workspaces/launchiine/src/menu/MainDrcButtonsFrame.h:17,
-                 from /workspaces/launchiine/src/menu/MainWindow.h:21,
-                 from /workspaces/launchiine/src/Application.h:17,
-                 from /workspaces/launchiine/src/Application.cpp:1:
-/workspaces/launchiine/src/gui/GameBgImage.h:4:10: fatal error: gui/GuiImageAsync.h: No such file or directory
-    4 | #include <gui/GuiImageAsync.h>
-      |          ^~~~~~~~~~~~~~~~~~~~~
-compilation terminated.
-make[1]: *** [/opt/devkitpro/devkitPPC/base_rules:15: entry.o] Error 1
-make[1]: *** Waiting for unfinished jobs....
-make[1]: *** [/opt/devkitpro/devkitPPC/base_rules:15: Application.o] Error 1
+linking ... men.elf
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: Application.o: in function `_ZN11ApplicationD2Ev':
+/opt/devkitpro//wut/usr/include/gui/WPadController.h:46: multiple definition of `_ZN11ApplicationD2Ev'; Application.o:/workspaces/launchiine/src/Application.cpp:46: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: Application.o: in function `_ZN11ApplicationD2Ev':
+/opt/devkitpro//wut/usr/include/gui/WPadController.h:46: multiple definition of `_ZN11ApplicationD1Ev'; Application.o:/workspaces/launchiine/src/Application.cpp:46: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: Application.o: in function `_ZN11ApplicationD0Ev':
+/workspaces/launchiine/src/Application.cpp:46: multiple definition of `_ZN11ApplicationD0Ev'; Application.o:/workspaces/launchiine/src/Application.cpp:46: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: Application.o: in function `_ZN11ApplicationC2Ev':
+/workspaces/launchiine/src/Application.cpp:23: multiple definition of `_ZN11ApplicationC2Ev'; Application.o:/workspaces/launchiine/src/Application.cpp:23: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: Application.o:/workspaces/launchiine/src/Application.cpp:20: multiple definition of `_ZN11Application15exitApplicationE'; Application.o:/workspaces/launchiine/src/Application.cpp:20: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: Application.o: in function `_ZN11ApplicationC2Ev':
+/workspaces/launchiine/src/Application.cpp:23: multiple definition of `_ZN11ApplicationC1Ev'; Application.o:/workspaces/launchiine/src/Application.cpp:23: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: Application.o: in function `_ZN11Application4execEv':
+/workspaces/launchiine/src/Application.cpp:69: multiple definition of `_ZN11Application4execEv'; Application.o:/workspaces/launchiine/src/Application.cpp:69: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: Application.o: in function `_ZN11Application4quitEi':
+/workspaces/launchiine/src/Application.cpp:80: multiple definition of `_ZN11Application4quitEi'; Application.o:/workspaces/launchiine/src/Application.cpp:80: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: Application.o:/workspaces/launchiine/src/Application.cpp:21: multiple definition of `_ZN11Application11quitRequestE'; Application.o:/workspaces/launchiine/src/Application.cpp:21: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: Application.o: in function `_ZN11Application6procUIEv':
+/workspaces/launchiine/src/Application.cpp:121: multiple definition of `_ZN11Application6procUIEv'; Application.o:/workspaces/launchiine/src/Application.cpp:121: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: Application.o: in function `_ZN11Application13executeThreadEv':
+/workspaces/launchiine/src/Application.cpp:187: multiple definition of `_ZN11Application13executeThreadEv'; Application.o:/workspaces/launchiine/src/Application.cpp:187: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: Application.o: in function `_ZN11Application7fadeOutEv':
+/workspaces/launchiine/src/Application.cpp:84: multiple definition of `_ZN11Application7fadeOutEv'; Application.o:/workspaces/launchiine/src/Application.cpp:84: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: Application.o:/workspaces/launchiine/src/Application.cpp:19: multiple definition of `_ZN11Application19applicationInstanceE'; Application.o:/workspaces/launchiine/src/Application.cpp:19: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: AsyncExecutor.o: in function `_ZNSt9once_flag18_Prepare_executionC4IZSt9call_onceIMNSt13__future_base13_State_baseV2EFvPSt8functionIFSt10unique_ptrINS3_12_Result_baseENS7_8_DeleterEEvEEPbEJPS4_SC_SD_EEvRS_OT_DpOT0_EUlvE_EERSI_':
+/opt/devkitpro/devkitPPC/powerpc-eabi/include/c++/13.1.0/bits/basic_string.h:275: multiple definition of `_ZN13AsyncExecutor21pushForDeleteInternalEP10GuiElement'; AsyncExecutor.o:/workspaces/launchiine/src/utils/AsyncExecutor.cpp:6: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: AsyncExecutor.o: in function `_ZN13AsyncExecutorD2Ev':
+/workspaces/launchiine/src/utils/AsyncExecutor.cpp:45: multiple definition of `_ZN13AsyncExecutorD2Ev'; AsyncExecutor.o:/workspaces/launchiine/src/utils/AsyncExecutor.cpp:45: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: AsyncExecutor.o: in function `_ZN13AsyncExecutorD2Ev':
+/workspaces/launchiine/src/utils/AsyncExecutor.cpp:45: multiple definition of `_ZN13AsyncExecutorD1Ev'; AsyncExecutor.o:/workspaces/launchiine/src/utils/AsyncExecutor.cpp:45: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: AsyncExecutor.o: in function `_ZN13AsyncExecutorC2Ev':
+/workspaces/launchiine/src/utils/AsyncExecutor.cpp:12: multiple definition of `_ZN13AsyncExecutorC2Ev'; AsyncExecutor.o:/workspaces/launchiine/src/utils/AsyncExecutor.cpp:12: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: AsyncExecutor.o: in function `_ZN13AsyncExecutorC2Ev':
+/workspaces/launchiine/src/utils/AsyncExecutor.cpp:12: multiple definition of `_ZN13AsyncExecutorC1Ev'; AsyncExecutor.o:/workspaces/launchiine/src/utils/AsyncExecutor.cpp:12: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: AsyncExecutor.o: in function `_ZNKSt6vectorISt6futureIvESaIS1_EE4sizeEv':
+/opt/devkitpro/devkitPPC/powerpc-eabi/include/c++/13.1.0/bits/stl_vector.h:988: multiple definition of `_ZN13AsyncExecutor15executeInternalESt8functionIFvvEE'; AsyncExecutor.o:/opt/devkitpro/devkitPPC/powerpc-eabi/include/c++/13.1.0/bits/stl_vector.h:988: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: AsyncExecutor.o:/workspaces/launchiine/src/utils/AsyncExecutor.cpp:4: multiple definition of `_ZN13AsyncExecutor8instanceE'; AsyncExecutor.o:/workspaces/launchiine/src/utils/AsyncExecutor.cpp:4: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: CFile.o: in function `_ZN5CFileD2Ev':
+/workspaces/launchiine/src/fs/CFile.cpp:25: multiple definition of `_ZN5CFileD2Ev'; CFile.o:/workspaces/launchiine/src/fs/CFile.cpp:25: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: CFile.o: in function `_ZN5CFileD2Ev':
+/workspaces/launchiine/src/fs/CFile.cpp:25: multiple definition of `_ZN5CFileD1Ev'; CFile.o:/workspaces/launchiine/src/fs/CFile.cpp:25: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: CFile.o: in function `_ZN5CFileD0Ev':
+/workspaces/launchiine/src/fs/CFile.cpp:25: multiple definition of `_ZN5CFileD0Ev'; CFile.o:/workspaces/launchiine/src/fs/CFile.cpp:25: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: CFile.o: in function `_ZN5CFileC2Ev':
+/workspaces/launchiine/src/fs/CFile.cpp:8: multiple definition of `_ZN5CFileC2Ev'; CFile.o:/workspaces/launchiine/src/fs/CFile.cpp:8: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: CFile.o: in function `_ZN5CFileC2Ev':
+/workspaces/launchiine/src/fs/CFile.cpp:8: multiple definition of `_ZN5CFileC1Ev'; CFile.o:/workspaces/launchiine/src/fs/CFile.cpp:8: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: CFile.o: in function `_ZN5CFileC2EPKhi':
+/workspaces/launchiine/src/fs/CFile.cpp:20: multiple definition of `_ZN5CFileC2EPKhi'; CFile.o:/workspaces/launchiine/src/fs/CFile.cpp:20: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: CFile.o: in function `_ZN5CFileC2EPKhi':
+/workspaces/launchiine/src/fs/CFile.cpp:20: multiple definition of `_ZN5CFileC1EPKhi'; CFile.o:/workspaces/launchiine/src/fs/CFile.cpp:20: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: CFile.o: in function `_ZN5CFile4openERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEENS_10eOpenTypesE':
+/workspaces/launchiine/src/fs/CFile.cpp:29: multiple definition of `_ZN5CFile4openERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEENS_10eOpenTypesE'; CFile.o:/workspaces/launchiine/src/fs/CFile.cpp:29: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: CFile.o: in function `_ZN5CFileC2ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEENS_10eOpenTypesE':
+/workspaces/launchiine/src/fs/CFile.cpp:15: multiple definition of `_ZN5CFileC2ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEENS_10eOpenTypesE'; CFile.o:/workspaces/launchiine/src/fs/CFile.cpp:15: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: CFile.o: in function `_ZN5CFileC2ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEENS_10eOpenTypesE':
+/workspaces/launchiine/src/fs/CFile.cpp:15: multiple definition of `_ZN5CFileC1ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEENS_10eOpenTypesE'; CFile.o:/workspaces/launchiine/src/fs/CFile.cpp:15: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: CFile.o: in function `_ZN5CFile4openEPKhi':
+/workspaces/launchiine/src/fs/CFile.cpp:67: multiple definition of `_ZN5CFile4openEPKhi'; CFile.o:/workspaces/launchiine/src/fs/CFile.cpp:67: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: CFile.o: in function `_ZN5CFile5closeEv':
+/workspaces/launchiine/src/fs/CFile.cpp:76: multiple definition of `_ZN5CFile5closeEv'; CFile.o:/workspaces/launchiine/src/fs/CFile.cpp:76: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: CFile.o: in function `_ZN5CFile4readEPhj':
+/workspaces/launchiine/src/fs/CFile.cpp:87: multiple definition of `_ZN5CFile4readEPhj'; CFile.o:/workspaces/launchiine/src/fs/CFile.cpp:87: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: CFile.o: in function `_ZN5CFile5writeEPKhj':
+/workspaces/launchiine/src/fs/CFile.cpp:111: multiple definition of `_ZN5CFile5writeEPKhj'; CFile.o:/workspaces/launchiine/src/fs/CFile.cpp:111: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: CFile.o: in function `_ZN5CFile4seekEli':
+/workspaces/launchiine/src/fs/CFile.cpp:133: multiple definition of `_ZN5CFile4seekEli'; CFile.o:/workspaces/launchiine/src/fs/CFile.cpp:133: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: CFile.o: in function `_ZN5CFile6fwriteEPKcz':
+/workspaces/launchiine/src/fs/CFile.cpp:159: multiple definition of `_ZN5CFile6fwriteEPKcz'; CFile.o:/workspaces/launchiine/src/fs/CFile.cpp:159: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: DirList.o: in function `_ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE7_M_dataEv':
+/opt/devkitpro/devkitPPC/powerpc-eabi/include/c++/13.1.0/bits/predefined_ops.h:158: multiple definition of `_ZN7DirListC2Ev'; DirList.o:/workspaces/launchiine/src/fs/DirList.cpp:39: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: DirList.o: in function `_ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE7_M_dataEv':
+/opt/devkitpro/devkitPPC/powerpc-eabi/include/c++/13.1.0/bits/predefined_ops.h:158: multiple definition of `_ZN7DirListC1Ev'; DirList.o:/workspaces/launchiine/src/fs/DirList.cpp:39: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: DirList.o: in function `_ZNKSt6vectorI8DirEntrySaIS0_EE4sizeEv':
+/opt/devkitpro/devkitPPC/powerpc-eabi/include/c++/13.1.0/bits/predefined_ops.h:158: multiple definition of `_ZN7DirList9ClearListEv'; DirList.o:/opt/devkitpro/devkitPPC/powerpc-eabi/include/c++/13.1.0/bits/stl_vector.h:988: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: DirList.o: in function `_ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE8capacityEv':
+/opt/devkitpro/devkitPPC/powerpc-eabi/include/c++/13.1.0/bits/stl_iterator.h:1158: multiple definition of `_ZN7DirListD2Ev'; DirList.o:/workspaces/launchiine/src/fs/DirList.cpp:50: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: DirList.o: in function `_ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE8capacityEv':
+/opt/devkitpro/devkitPPC/powerpc-eabi/include/c++/13.1.0/bits/stl_iterator.h:1158: multiple definition of `_ZN7DirListD1Ev'; DirList.o:/workspaces/launchiine/src/fs/DirList.cpp:50: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: DirList.o: in function `_ZN7DirListD0Ev':
+/opt/devkitpro/devkitPPC/powerpc-eabi/include/c++/13.1.0/bits/move.h:206: multiple definition of `_ZN7DirListD0Ev'; DirList.o:/workspaces/launchiine/src/fs/DirList.cpp:50: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: DirList.o: in function `_ZNKSt6vectorI8DirEntrySaIS0_EE4sizeEv':
+/opt/devkitpro/devkitPPC/powerpc-eabi/include/c++/13.1.0/bits/stl_heap.h:235: multiple definition of `_ZNK7DirList11GetFilenameEi'; DirList.o:/opt/devkitpro/devkitPPC/powerpc-eabi/include/c++/13.1.0/bits/stl_vector.h:988: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: DirList.o: in function `_ZNKSt6vectorI8DirEntrySaIS0_EE4sizeEv':
+/opt/devkitpro/devkitPPC/powerpc-eabi/include/c++/13.1.0/bits/stl_heap.h:140: multiple definition of `_ZNK7DirList11GetFilesizeEi'; DirList.o:/opt/devkitpro/devkitPPC/powerpc-eabi/include/c++/13.1.0/bits/stl_vector.h:988: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: DirList.o: in function `_ZSt13__adjust_heapIN9__gnu_cxx17__normal_iteratorIP8DirEntrySt6vectorIS2_SaIS2_EEEEiS2_NS0_5__ops15_Iter_comp_iterIPFiRKS2_SB_EEEEvT_T0_SG_T1_T2_':
+/opt/devkitpro/devkitPPC/powerpc-eabi/include/c++/13.1.0/bits/move.h:206: multiple definition of `_ZNK7DirList12GetFileIndexEPKc'; DirList.o:/workspaces/launchiine/src/fs/DirList.cpp:208: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: DirList.o: in function `_ZN7DirList9AddEntrieERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEPKci':
+/opt/devkitpro/devkitPPC/powerpc-eabi/include/c++/13.1.0/bits/stl_heap.h:241: multiple definition of `_ZN7DirList9AddEntrieERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEPKci'; DirList.o:/workspaces/launchiine/src/fs/DirList.cpp:135: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: DirList.o: in function `_ZN7DirList16InternalLoadPathERNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE':
+/opt/devkitpro/devkitPPC/powerpc-eabi/include/c++/13.1.0/bits/predefined_ops.h:187: multiple definition of `_ZN7DirList16InternalLoadPathERNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'; DirList.o:/workspaces/launchiine/src/fs/DirList.cpp:81: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: DirList.o: in function `_ZN7DirList8LoadPathERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEPKcjj':
+/workspaces/launchiine/src/fs/DirList.cpp:55: multiple definition of `_ZN7DirList8LoadPathERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEPKcjj'; DirList.o:/workspaces/launchiine/src/fs/DirList.cpp:55: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: DirList.o: in function `_ZN7DirListC2ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEPKcjj':
+/workspaces/launchiine/src/fs/DirList.cpp:45: multiple definition of `_ZN7DirListC2ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEPKcjj'; DirList.o:/workspaces/launchiine/src/fs/DirList.cpp:45: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: DirList.o: in function `_ZN7DirListC2ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEPKcjj':
+/workspaces/launchiine/src/fs/DirList.cpp:45: multiple definition of `_ZN7DirListC1ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEPKcjj'; DirList.o:/workspaces/launchiine/src/fs/DirList.cpp:45: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: DirList.o: in function `_ZN7DirList8SortListEv':
+/workspaces/launchiine/src/fs/DirList.cpp:188: multiple definition of `_ZN7DirList8SortListEv'; DirList.o:/workspaces/launchiine/src/fs/DirList.cpp:188: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: DirList.o: in function `_ZN7DirList8SortListEPFiRK8DirEntryS2_E':
+/workspaces/launchiine/src/fs/DirList.cpp:193: multiple definition of `_ZN7DirList8SortListEPFiRK8DirEntryS2_E'; DirList.o:/workspaces/launchiine/src/fs/DirList.cpp:193: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: FSUtils.o: in function `_ZN7FSUtils13LoadFileToMemEPKcPPhPj':
+/workspaces/launchiine/src/fs/FSUtils.cpp:10: multiple definition of `_ZN7FSUtils13LoadFileToMemEPKcPPhPj'; FSUtils.o:/workspaces/launchiine/src/fs/FSUtils.cpp:10: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: FSUtils.o: in function `_ZN7FSUtils9CheckFileEPKc':
+/workspaces/launchiine/src/fs/FSUtils.cpp:61: multiple definition of `_ZN7FSUtils9CheckFileEPKc'; FSUtils.o:/workspaces/launchiine/src/fs/FSUtils.cpp:61: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: FSUtils.o: in function `_ZN7FSUtils15CreateSubfolderEPKc':
+/workspaces/launchiine/src/fs/FSUtils.cpp:84: multiple definition of `_ZN7FSUtils15CreateSubfolderEPKc'; FSUtils.o:/workspaces/launchiine/src/fs/FSUtils.cpp:84: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: FSUtils.o: in function `_ZN7FSUtils16saveBufferToFileEPKcPvj':
+/workspaces/launchiine/src/fs/FSUtils.cpp:132: multiple definition of `_ZN7FSUtils16saveBufferToFileEPKcPvj'; FSUtils.o:/workspaces/launchiine/src/fs/FSUtils.cpp:132: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: GameIcon.o: in function `_ZNSt20_List_const_iteratorIPN7sigslot17_connection_base2IP10GuiElementbNS0_15single_threadedEEEEppEv':
+/opt/devkitpro//wut/usr/include/gui/GuiElement.h:113: multiple definition of `_ZN8GameIconD2Ev'; GameIcon.o:/workspaces/launchiine/src/gui/GameIcon.cpp:84: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: GameIcon.o: in function `_ZNSt20_List_const_iteratorIPN7sigslot17_connection_base2IP10GuiElementbNS0_15single_threadedEEEEppEv':
+/opt/devkitpro//wut/usr/include/gui/GuiElement.h:113: multiple definition of `_ZN8GameIconD1Ev'; GameIcon.o:/workspaces/launchiine/src/gui/GameIcon.cpp:84: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: GameIcon.o: in function `_ZN10GuiElement9getScaleZEv':
+/opt/devkitpro//wut/usr/include/gui/GuiElement.h:393: multiple definition of `_ZN8GameIconD0Ev'; GameIcon.o:/workspaces/launchiine/src/gui/GameIcon.cpp:84: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: GameIcon.o: in function `_ZN10GuiElement8getAlphaEv':
+/opt/devkitpro//wut/usr/include/gui/GuiElement.h:395: multiple definition of `_ZN8GameIconC2EP12GuiImageData'; GameIcon.o:/workspaces/launchiine/src/gui/GameIcon.cpp:13: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: GameIcon.o: in function `_ZN10GuiElement8getAlphaEv':
+/opt/devkitpro//wut/usr/include/gui/GuiElement.h:395: multiple definition of `_ZN8GameIconC1EP12GuiImageData'; GameIcon.o:/workspaces/launchiine/src/gui/GameIcon.cpp:13: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: GameIcon.o: in function `_ZN10GuiElement9getScaleYEv':
+/opt/devkitpro//wut/usr/include/gui/GuiElement.h:396: multiple definition of `_ZN8GameIcon20checkRayIntersectionERKN3glm3vecILi3EfLNS0_9qualifierE0EEES5_'; GameIcon.o:/workspaces/launchiine/src/gui/GameIcon.cpp:121: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: GameIcon.o: in function `_ZN8GameIcon4drawEP6CVideoRKN3glm3matILi4ELi4EfLNS2_9qualifierE0EEES7_S7_':
+/workspaces/launchiine/src/gui/GameIcon.cpp:158: multiple definition of `_ZN8GameIcon4drawEP6CVideoRKN3glm3matILi4ELi4EfLNS2_9qualifierE0EEES7_S7_'; GameIcon.o:/workspaces/launchiine/src/gui/GameIcon.cpp:158: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: GameList.o: in function `_ZN8GameList5clearEv':
+/opt/devkitpro/devkitPPC/powerpc-eabi/include/c++/13.1.0/bits/stl_vector.h:1894: multiple definition of `_ZN8GameList5clearEv'; GameList.o:/workspaces/launchiine/src/game/GameList.cpp:25: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: GameList.o: in function `_ZN8GameList11getGameInfoEy':
+/workspaces/launchiine/src/game/GameList.cpp:43: multiple definition of `_ZN8GameList11getGameInfoEy'; GameList.o:/workspaces/launchiine/src/game/GameList.cpp:43: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: GameList.o: in function `_ZN8GameList12readGameListEv':
+/workspaces/launchiine/src/game/GameList.cpp:56: multiple definition of `_ZN8GameList12readGameListEv'; GameList.o:/workspaces/launchiine/src/game/GameList.cpp:56: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: GameList.o: in function `_ZN8GameList4loadEv':
+/workspaces/launchiine/src/game/GameList.cpp:204: multiple definition of `_ZN8GameList4loadEv'; GameList.o:/workspaces/launchiine/src/game/GameList.cpp:204: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: GameList.o: in function `_ZN8GameListC2Ev':
+/workspaces/launchiine/src/game/GameList.cpp:16: multiple definition of `_ZN8GameListC2Ev'; GameList.o:/workspaces/launchiine/src/game/GameList.cpp:16: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: GameList.o: in function `_ZN8GameListC2Ev':
+/workspaces/launchiine/src/game/GameList.cpp:16: multiple definition of `_ZN8GameListC1Ev'; GameList.o:/workspaces/launchiine/src/game/GameList.cpp:16: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: GameList.o: in function `_ZN8GameListD2Ev':
+/workspaces/launchiine/src/game/GameList.cpp:19: multiple definition of `_ZN8GameListD2Ev'; GameList.o:/workspaces/launchiine/src/game/GameList.cpp:19: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: GameList.o: in function `_ZN8GameListD2Ev':
+/workspaces/launchiine/src/game/GameList.cpp:19: multiple definition of `_ZN8GameListD1Ev'; GameList.o:/workspaces/launchiine/src/game/GameList.cpp:19: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: GameList.o: in function `_ZN8GameList15updateTitleInfoEv':
+/workspaces/launchiine/src/game/GameList.cpp:164: multiple definition of `_ZN8GameList15updateTitleInfoEv'; GameList.o:/workspaces/launchiine/src/game/GameList.cpp:164: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: GameSplashScreen.o: in function `_ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE13_M_local_dataEv':
+/opt/devkitpro//wut/usr/include/gui/GuiElement.h:146: multiple definition of `_ZN16GameSplashScreen24OnSplashScreenFadeInDoneEP10GuiElement'; GameSplashScreen.o:/opt/devkitpro//wut/usr/include/gui/GuiElement.h:146: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: GameSplashScreen.o: in function `_ZN10GuiElement9getScaleXEv':
+/opt/devkitpro//wut/usr/include/gui/GuiElement.h:408: multiple definition of `_ZN16GameSplashScreenC2EiiP9_gameInfob'; GameSplashScreen.o:/workspaces/launchiine/src/menu/GameSplashScreen.cpp:7: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: GameSplashScreen.o: in function `_ZN10GuiElement9getScaleXEv':
+/opt/devkitpro//wut/usr/include/gui/GuiElement.h:408: multiple definition of `_ZN16GameSplashScreenC1EiiP9_gameInfob'; GameSplashScreen.o:/workspaces/launchiine/src/menu/GameSplashScreen.cpp:7: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: GameSplashScreen.o: in function `_ZN16GameSplashScreenD2Ev':
+/workspaces/launchiine/src/menu/GameSplashScreen.cpp:59: multiple definition of `_ZN16GameSplashScreenD2Ev'; GameSplashScreen.o:/workspaces/launchiine/src/menu/GameSplashScreen.cpp:59: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: GameSplashScreen.o: in function `_ZThn252_N16GameSplashScreenD1Ev':
+/workspaces/launchiine/src/menu/GameSplashScreen.h:11: multiple definition of `_ZThn252_N16GameSplashScreenD1Ev'; GameSplashScreen.o:/workspaces/launchiine/src/menu/GameSplashScreen.h:11: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: GameSplashScreen.o: in function `_ZN16GameSplashScreenD2Ev':
+/workspaces/launchiine/src/menu/GameSplashScreen.cpp:59: multiple definition of `_ZN16GameSplashScreenD1Ev'; GameSplashScreen.o:/workspaces/launchiine/src/menu/GameSplashScreen.cpp:59: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: GameSplashScreen.o: in function `_ZN16GameSplashScreenD0Ev':
+/workspaces/launchiine/src/menu/GameSplashScreen.cpp:59: multiple definition of `_ZN16GameSplashScreenD0Ev'; GameSplashScreen.o:/workspaces/launchiine/src/menu/GameSplashScreen.cpp:59: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: GameSplashScreen.o: in function `_ZThn252_N16GameSplashScreenD0Ev':
+/workspaces/launchiine/src/menu/GameSplashScreen.h:11: multiple definition of `_ZThn252_N16GameSplashScreenD0Ev'; GameSplashScreen.o:/workspaces/launchiine/src/menu/GameSplashScreen.h:11: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: GameSplashScreen.o: in function `_ZN16GameSplashScreen4drawEP6CVideo':
+/workspaces/launchiine/src/menu/GameSplashScreen.cpp:50: multiple definition of `_ZN16GameSplashScreen4drawEP6CVideo'; GameSplashScreen.o:/workspaces/launchiine/src/menu/GameSplashScreen.cpp:50: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: GuiIconGrid.o: in function `_ZN7sigslot15single_threaded6unlockEv':
+/opt/devkitpro//wut/usr/include/gui/GuiElement.h:113: multiple definition of `_ZN11GuiIconGrid15getSelectedGameEv'; GuiIconGrid.o:/opt/devkitpro//wut/usr/include/gui/GuiElement.h:113: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: GuiIconGrid.o: in function `_ZN10GuiElement9getScaleXEv':
+/opt/devkitpro//wut/usr/include/gui/GuiElement.h:113: multiple definition of `_ZN11GuiIconGrid16OnLeftArrowClickEP9GuiButtonPK13GuiControllerP10GuiTrigger'; GuiIconGrid.o:/opt/devkitpro//wut/usr/include/gui/GuiElement.h:116: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: GuiIconGrid.o: in function `_ZN7sigslot12_connection2I11GuiIconGridP9GuiButtonPK13GuiControllerNS_15single_threadedEEC4ERKS8_':
+/opt/devkitpro//wut/usr/include/gui/GuiElement.h:113: multiple definition of `_ZN11GuiIconGrid17OnRightArrowClickEP9GuiButtonPK13GuiControllerP10GuiTrigger'; GuiIconGrid.o:/opt/devkitpro//wut/usr/include/gui/GuiElement.h:117: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: GuiIconGrid.o: in function `_ZN11GuiIconGrid19OnLeftArrowReleasedEP9GuiButtonPK13GuiControllerP10GuiTrigger':
+/opt/devkitpro//wut/usr/include/gui/GuiElement.h:117: multiple definition of `_ZN11GuiIconGrid19OnLeftArrowReleasedEP9GuiButtonPK13GuiControllerP10GuiTrigger'; GuiIconGrid.o:/opt/devkitpro//wut/usr/include/gui/GuiElement.h:120: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: GuiIconGrid.o: in function `_ZN11GuiIconGrid20OnRightArrowReleasedEP9GuiButtonPK13GuiControllerP10GuiTrigger':
+/opt/devkitpro//wut/usr/include/gui/GuiElement.h:120: multiple definition of `_ZN11GuiIconGrid20OnRightArrowReleasedEP9GuiButtonPK13GuiControllerP10GuiTrigger'; GuiIconGrid.o:/opt/devkitpro//wut/usr/include/gui/GuiElement.h:120: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: GuiIconGrid.o: in function `_ZNKSt6vectorISt4pairIyPN11GuiIconGrid17GameInfoContainerEESaIS4_EE12_M_check_lenEjPKc':
+/opt/devkitpro//wut/usr/include/gui/GuiElement.h:120: multiple definition of `_ZN11GuiIconGrid16OnGameButtonHeldEP9GuiButtonPK13GuiControllerP10GuiTrigger'; GuiIconGrid.o:/opt/devkitpro//wut/usr/include/gui/GuiElement.h:120: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: GuiIconGrid.o: in function `_ZN11GuiIconGrid21OnGameButtonPointedOnEP9GuiButtonPK13GuiController':
+/opt/devkitpro//wut/usr/include/gui/GuiElement.h:393: multiple definition of `_ZN11GuiIconGrid21OnGameButtonPointedOnEP9GuiButtonPK13GuiController'; GuiIconGrid.o:/opt/devkitpro//wut/usr/include/gui/GuiElement.h:396: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: GuiIconGrid.o: in function `_ZN11GuiIconGrid6updateEP13GuiController':
+/opt/devkitpro//wut/usr/include/gui/GuiElement.h:393: multiple definition of `_ZN11GuiIconGrid6updateEP13GuiController'; GuiIconGrid.o:/opt/devkitpro//wut/usr/include/gui/GuiElement.h:396: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: GuiIconGrid.o: in function `_ZSt12construct_atISt4pairIyPN11GuiIconGrid17GameInfoContainerEEJS4_EEDTgsnwcvPvLi0E_T_pispcl7declvalIT0_EEEEPS6_DpOS7_':
+/opt/devkitpro//wut/usr/include/gui/GuiElement.h:395: multiple definition of `_ZN11GuiIconGrid15OnLeftArrowHeldEP9GuiButtonPK13GuiControllerP10GuiTrigger'; GuiIconGrid.o:/opt/devkitpro//wut/usr/include/gui/GuiElement.h:396: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: GuiIconGrid.o: in function `_ZN10GuiElement9getScaleXEv':
+/opt/devkitpro//wut/usr/include/gui/GuiElement.h:393: multiple definition of `_ZN11GuiIconGrid16OnRightArrowHeldEP9GuiButtonPK13GuiControllerP10GuiTrigger'; GuiIconGrid.o:/opt/devkitpro//wut/usr/include/gui/GuiElement.h:144: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: GuiIconGrid.o: in function `_ZN10GuiElement9getScaleYEv':
+/opt/devkitpro//wut/usr/include/gui/GuiElement.h:396: multiple definition of `_ZN11GuiIconGrid22OnGameButtonPointedOffEP9GuiButtonPK13GuiController'; GuiIconGrid.o:/opt/devkitpro//wut/usr/include/gui/GuiElement.h:396: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: GuiIconGrid.o: in function `_ZN10GuiElement9getScaleXEv':
+/opt/devkitpro//wut/usr/include/gui/GuiElement.h:395: multiple definition of `_ZN11GuiIconGrid6OnDragEP15GuiDragListenerPK13GuiControllerP10GuiTriggerii'; GuiIconGrid.o:/workspaces/launchiine/src/gui/GuiIconGrid.cpp:402: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: GuiIconGrid.o: in function `_ZN11GuiIconGrid18OnGameTitleUpdatedEP9_gameInfo':
+/opt/devkitpro//wut/usr/include/gui/GuiElement.h:396: multiple definition of `_ZN11GuiIconGrid18OnGameTitleUpdatedEP9_gameInfo'; GuiIconGrid.o:/workspaces/launchiine/src/gui/GuiIconGrid.cpp:479: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: GuiIconGrid.o: in function `_ZN11GuiIconGrid13OnLaunchClickEP9GuiButtonPK13GuiControllerP10GuiTrigger':
+/workspaces/launchiine/src/gui/GuiIconGrid.cpp:337: multiple definition of `_ZN11GuiIconGrid13OnLaunchClickEP9GuiButtonPK13GuiControllerP10GuiTrigger'; GuiIconGrid.o:/workspaces/launchiine/src/gui/GuiIconGrid.cpp:337: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: GuiIconGrid.o: in function `_ZN11GuiIconGrid17OnGameButtonClickEP9GuiButtonPK13GuiControllerP10GuiTrigger':
+/workspaces/launchiine/src/gui/GuiIconGrid.cpp:410: multiple definition of `_ZN11GuiIconGrid17OnGameButtonClickEP9GuiButtonPK13GuiControllerP10GuiTrigger'; GuiIconGrid.o:/workspaces/launchiine/src/gui/GuiIconGrid.cpp:410: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: GuiIconGrid.o: in function `_ZN11GuiIconGrid22OnGameTitleListUpdatedEP8GameList':
+/workspaces/launchiine/src/gui/GuiIconGrid.cpp:191: multiple definition of `_ZN11GuiIconGrid22OnGameTitleListUpdatedEP8GameList'; GuiIconGrid.o:/workspaces/launchiine/src/gui/GuiIconGrid.cpp:191: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: GuiIconGrid.o: in function `_ZN11GuiIconGrid16offsetForTitleIdEy':
+/workspaces/launchiine/src/gui/GuiIconGrid.cpp:148: multiple definition of `_ZN11GuiIconGrid16offsetForTitleIdEy'; GuiIconGrid.o:/workspaces/launchiine/src/gui/GuiIconGrid.cpp:148: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: GuiIconGrid.o: in function `_ZN11GuiIconGrid11OnLeftClickEP9GuiButtonPK13GuiControllerP10GuiTrigger':
+/workspaces/launchiine/src/gui/GuiIconGrid.cpp:254: multiple definition of `_ZN11GuiIconGrid11OnLeftClickEP9GuiButtonPK13GuiControllerP10GuiTrigger'; GuiIconGrid.o:/workspaces/launchiine/src/gui/GuiIconGrid.cpp:254: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: GuiIconGrid.o: in function `_ZN11GuiIconGrid12OnRightClickEP9GuiButtonPK13GuiControllerP10GuiTrigger':
+/workspaces/launchiine/src/gui/GuiIconGrid.cpp:274: multiple definition of `_ZN11GuiIconGrid12OnRightClickEP9GuiButtonPK13GuiControllerP10GuiTrigger'; GuiIconGrid.o:/workspaces/launchiine/src/gui/GuiIconGrid.cpp:274: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: GuiIconGrid.o: in function `_ZN11GuiIconGrid11OnDownClickEP9GuiButtonPK13GuiControllerP10GuiTrigger':
+/workspaces/launchiine/src/gui/GuiIconGrid.cpp:294: multiple definition of `_ZN11GuiIconGrid11OnDownClickEP9GuiButtonPK13GuiControllerP10GuiTrigger'; GuiIconGrid.o:/workspaces/launchiine/src/gui/GuiIconGrid.cpp:294: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: GuiIconGrid.o: in function `_ZN11GuiIconGrid9OnUpClickEP9GuiButtonPK13GuiControllerP10GuiTrigger':
+/workspaces/launchiine/src/gui/GuiIconGrid.cpp:315: multiple definition of `_ZN11GuiIconGrid9OnUpClickEP9GuiButtonPK13GuiControllerP10GuiTrigger'; GuiIconGrid.o:/workspaces/launchiine/src/gui/GuiIconGrid.cpp:315: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: GuiIconGrid.o: in function `_ZN11GuiIconGrid16OnGameTitleAddedEP9_gameInfo':
+/workspaces/launchiine/src/gui/GuiIconGrid.cpp:428: multiple definition of `_ZN11GuiIconGrid16OnGameTitleAddedEP9_gameInfo'; GuiIconGrid.o:/workspaces/launchiine/src/gui/GuiIconGrid.cpp:428: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: GuiIconGrid.o: in function `_ZN11GuiIconGrid21updateButtonPositionsEv':
+/workspaces/launchiine/src/gui/GuiIconGrid.cpp:583: multiple definition of `_ZN11GuiIconGrid21updateButtonPositionsEv'; GuiIconGrid.o:/workspaces/launchiine/src/gui/GuiIconGrid.cpp:583: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: GuiIconGrid.o: in function `_ZN11GuiIconGrid7processEv':
+/workspaces/launchiine/src/gui/GuiIconGrid.cpp:500: multiple definition of `_ZN11GuiIconGrid7processEv'; GuiIconGrid.o:/workspaces/launchiine/src/gui/GuiIconGrid.cpp:500: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: GuiIconGrid.o: in function `_ZN11GuiIconGrid15setSelectedGameEy':
+/workspaces/launchiine/src/gui/GuiIconGrid.cpp:161: multiple definition of `_ZN11GuiIconGrid15setSelectedGameEy'; GuiIconGrid.o:/workspaces/launchiine/src/gui/GuiIconGrid.cpp:161: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: GuiIconGrid.o: in function `_ZN11GuiIconGridC2Eiiyb':
+/workspaces/launchiine/src/gui/GuiIconGrid.cpp:28: multiple definition of `_ZN11GuiIconGridC2Eiiyb'; GuiIconGrid.o:/workspaces/launchiine/src/gui/GuiIconGrid.cpp:28: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: GuiIconGrid.o: in function `_ZN11GuiIconGridC2Eiiyb':
+/workspaces/launchiine/src/gui/GuiIconGrid.cpp:28: multiple definition of `_ZN11GuiIconGridC1Eiiyb'; GuiIconGrid.o:/workspaces/launchiine/src/gui/GuiIconGrid.cpp:28: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: GuiIconGrid.o: in function `_ZN11GuiIconGridD2Ev':
+/workspaces/launchiine/src/gui/GuiIconGrid.cpp:127: multiple definition of `_ZN11GuiIconGridD2Ev'; GuiIconGrid.o:/workspaces/launchiine/src/gui/GuiIconGrid.cpp:127: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: GuiIconGrid.o: in function `_ZThn284_N11GuiIconGridD1Ev':
+/workspaces/launchiine/src/gui/GuiIconGrid.h:31: multiple definition of `_ZThn284_N11GuiIconGridD1Ev'; GuiIconGrid.o:/workspaces/launchiine/src/gui/GuiIconGrid.h:31: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: GuiIconGrid.o: in function `_ZN11GuiIconGridD2Ev':
+/workspaces/launchiine/src/gui/GuiIconGrid.cpp:127: multiple definition of `_ZN11GuiIconGridD1Ev'; GuiIconGrid.o:/workspaces/launchiine/src/gui/GuiIconGrid.cpp:127: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: GuiIconGrid.o: in function `_ZN11GuiIconGridD0Ev':
+/workspaces/launchiine/src/gui/GuiIconGrid.cpp:127: multiple definition of `_ZN11GuiIconGridD0Ev'; GuiIconGrid.o:/workspaces/launchiine/src/gui/GuiIconGrid.cpp:127: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: GuiIconGrid.o: in function `_ZThn284_N11GuiIconGridD0Ev':
+/workspaces/launchiine/src/gui/GuiIconGrid.h:31: multiple definition of `_ZThn284_N11GuiIconGridD0Ev'; GuiIconGrid.o:/workspaces/launchiine/src/gui/GuiIconGrid.h:31: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: GuiIconGrid.o: in function `_ZN11GuiIconGrid4drawEP6CVideo':
+/workspaces/launchiine/src/gui/GuiIconGrid.cpp:736: multiple definition of `_ZN11GuiIconGrid4drawEP6CVideo'; GuiIconGrid.o:/workspaces/launchiine/src/gui/GuiIconGrid.cpp:736: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: KeyboardHelper.o: in function `_ZN14KeyboardHelperC2Ev':
+/workspaces/launchiine/src/menu/KeyboardHelper.cpp:6: multiple definition of `_ZN14KeyboardHelperC2Ev'; KeyboardHelper.o:/workspaces/launchiine/src/menu/KeyboardHelper.cpp:6: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: KeyboardHelper.o: in function `_ZN14KeyboardHelperC2Ev':
+/workspaces/launchiine/src/menu/KeyboardHelper.cpp:6: multiple definition of `_ZN14KeyboardHelperC1Ev'; KeyboardHelper.o:/workspaces/launchiine/src/menu/KeyboardHelper.cpp:6: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: KeyboardHelper.o: in function `_ZN14KeyboardHelperD2Ev':
+/workspaces/launchiine/src/menu/KeyboardHelper.cpp:28: multiple definition of `_ZN14KeyboardHelperD2Ev'; KeyboardHelper.o:/workspaces/launchiine/src/menu/KeyboardHelper.cpp:28: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: KeyboardHelper.o: in function `_ZN14KeyboardHelperD2Ev':
+/workspaces/launchiine/src/menu/KeyboardHelper.cpp:28: multiple definition of `_ZN14KeyboardHelperD1Ev'; KeyboardHelper.o:/workspaces/launchiine/src/menu/KeyboardHelper.cpp:28: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: KeyboardHelper.o: in function `_ZN14KeyboardHelper12openKeyboardEv':
+/workspaces/launchiine/src/menu/KeyboardHelper.cpp:39: multiple definition of `_ZN14KeyboardHelper12openKeyboardEv'; KeyboardHelper.o:/workspaces/launchiine/src/menu/KeyboardHelper.cpp:39: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: KeyboardHelper.o: in function `_ZN14KeyboardHelper9getResultB5cxx11Ev':
+/workspaces/launchiine/src/menu/KeyboardHelper.cpp:54: multiple definition of `_ZN14KeyboardHelper9getResultB5cxx11Ev'; KeyboardHelper.o:/workspaces/launchiine/src/menu/KeyboardHelper.cpp:54: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: KeyboardHelper.o: in function `_ZN14KeyboardHelper11checkResultEv':
+/workspaces/launchiine/src/menu/KeyboardHelper.cpp:58: multiple definition of `_ZN14KeyboardHelper11checkResultEv'; KeyboardHelper.o:/workspaces/launchiine/src/menu/KeyboardHelper.cpp:58: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: KeyboardHelper.o: in function `_ZN14KeyboardHelper7drawDRCEv':
+/workspaces/launchiine/src/menu/KeyboardHelper.cpp:110: multiple definition of `_ZN14KeyboardHelper7drawDRCEv'; KeyboardHelper.o:/workspaces/launchiine/src/menu/KeyboardHelper.cpp:110: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: KeyboardHelper.o: in function `_ZN14KeyboardHelper6drawTVEv':
+/workspaces/launchiine/src/menu/KeyboardHelper.cpp:114: multiple definition of `_ZN14KeyboardHelper6drawTVEv'; KeyboardHelper.o:/workspaces/launchiine/src/menu/KeyboardHelper.cpp:114: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: MainWindow.o: in function `_ZNSt8_Rb_treeIPN7sigslot12_signal_baseINS0_15single_threadedEEES4_St9_IdentityIS4_ESt4lessIS4_ESaIS4_EE8_S_rightEPSt18_Rb_tree_node_base':
+/opt/devkitpro//wut/usr/include/gui/GuiElement.h:113: multiple definition of `_ZN10MainWindow22OnGameTitleListChangedEP8GameList'; MainWindow.o:/opt/devkitpro//wut/usr/include/gui/GuiElement.h:113: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: MainWindow.o: in function `_ZN7sigslot10lock_blockINS_15single_threadedEED4Ev':
+/opt/devkitpro//wut/usr/include/gui/GuiElement.h:126: multiple definition of `_ZN10MainWindow18OnGameTitleUpdatedEP9_gameInfo'; MainWindow.o:/opt/devkitpro//wut/usr/include/gui/GuiElement.h:126: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: MainWindow.o: in function `_ZN7sigslot9has_slotsINS_15single_threadedEE17signal_disconnectEPNS_12_signal_baseIS1_EE':
+/opt/devkitpro//wut/usr/include/gui/GuiElement.h:393: multiple definition of `_ZN10MainWindow16OnGameTitleAddedEP9_gameInfo'; MainWindow.o:/opt/devkitpro//wut/usr/include/gui/GuiElement.h:393: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: MainWindow.o: in function `_ZN10MainWindow23OnSettingsButtonClickedEP10GuiElement':
+/opt/devkitpro//wut/usr/include/gui/GuiElement.h:393: multiple definition of `_ZN10MainWindow23OnSettingsButtonClickedEP10GuiElement'; MainWindow.o:/opt/devkitpro//wut/usr/include/gui/GuiElement.h:393: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: MainWindow.o: in function `_ZN7sigslot10lock_blockINS_15single_threadedEEC4EPS1_':
+/opt/devkitpro//wut/usr/include/gui/GuiElement.h:393: multiple definition of `_ZN10MainWindow21OnGameSelectionChangeEP15GuiTitleBrowsery'; MainWindow.o:/opt/devkitpro//wut/usr/include/gui/GuiElement.h:393: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: MainWindow.o: in function `_ZN7sigslot10lock_blockINS_15single_threadedEEC4EPS1_':
+/opt/devkitpro//wut/usr/include/gui/GuiElement.h:396: multiple definition of `_ZN10MainWindow29OnGameListFilterButtonClickedEP10GuiElement'; MainWindow.o:/opt/devkitpro//wut/usr/include/gui/GuiElement.h:396: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: MainWindow.o: in function `_ZN10GuiElement9getScaleYEv':
+/opt/devkitpro//wut/usr/include/gui/GuiElement.h:395: multiple definition of `_ZN10MainWindow13updateEffectsEv'; MainWindow.o:/workspaces/launchiine/src/menu/MainWindow.cpp:65: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: MainWindow.o: in function `_ZN10GuiElement9getScaleXEv':
+/opt/devkitpro//wut/usr/include/gui/GuiElement.h:131: multiple definition of `_ZN10MainWindow6updateEP13GuiController'; MainWindow.o:/workspaces/launchiine/src/menu/MainWindow.cpp:145: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: MainWindow.o: in function `_ZNKSt6vectorIP10GuiElementSaIS1_EE4sizeEv':
+/opt/devkitpro//wut/usr/include/gui/GuiElement.h:396: multiple definition of `_ZN10MainWindow7drawDrcEP6CVideo'; MainWindow.o:/opt/devkitpro/devkitPPC/powerpc-eabi/include/c++/13.1.0/bits/stl_vector.h:988: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: MainWindow.o: in function `_ZNKSt6vectorIP10GuiElementSaIS1_EE4sizeEv':
+/opt/devkitpro//wut/usr/include/gui/GuiElement.h:396: multiple definition of `_ZN10MainWindow6drawTvEP6CVideo'; MainWindow.o:/opt/devkitpro/devkitPPC/powerpc-eabi/include/c++/13.1.0/bits/stl_vector.h:988: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: MainWindow.o: in function `_ZN10MainWindow19OnCloseEffectFinishEP10GuiElement':
+/workspaces/launchiine/src/menu/MainWindow.cpp:345: multiple definition of `_ZN10MainWindow19OnCloseEffectFinishEP10GuiElement'; MainWindow.o:/workspaces/launchiine/src/menu/MainWindow.cpp:345: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: MainWindow.o: in function `_ZN10MainWindow12OnGameLaunchEy':
+/workspaces/launchiine/src/menu/MainWindow.cpp:403: multiple definition of `_ZN10MainWindow12OnGameLaunchEy'; MainWindow.o:/workspaces/launchiine/src/menu/MainWindow.cpp:403: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: MainWindow.o: in function `_ZN10MainWindow32OnGameLaunchSplashScreenFinishedEP10GuiElementP9_gameInfob':
+/workspaces/launchiine/src/menu/MainWindow.cpp:389: multiple definition of `_ZN10MainWindow32OnGameLaunchSplashScreenFinishedEP10GuiElementP9_gameInfob'; MainWindow.o:/workspaces/launchiine/src/menu/MainWindow.cpp:389: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: MainWindow.o: in function `_ZN10MainWindow7processEv':
+/workspaces/launchiine/src/menu/MainWindow.cpp:87: multiple definition of `_ZN10MainWindow7processEv'; MainWindow.o:/workspaces/launchiine/src/menu/MainWindow.cpp:87: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: MainWindow.o: in function `_ZN10MainWindow21OnLayoutSwitchClickedEP10GuiElement':
+/workspaces/launchiine/src/menu/MainWindow.cpp:266: multiple definition of `_ZN10MainWindow21OnLayoutSwitchClickedEP10GuiElement'; MainWindow.o:/workspaces/launchiine/src/menu/MainWindow.cpp:266: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: MainWindow.o: in function `_ZN10MainWindow26OnLayoutSwitchEffectFinishEP10GuiElement':
+/workspaces/launchiine/src/menu/MainWindow.cpp:303: multiple definition of `_ZN10MainWindow26OnLayoutSwitchEffectFinishEP10GuiElement'; MainWindow.o:/workspaces/launchiine/src/menu/MainWindow.cpp:303: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: MainWindow.o: in function `_ZN10MainWindow24OnGameLaunchSplashScreenEP15GuiTitleBrowsery':
+/workspaces/launchiine/src/menu/MainWindow.cpp:366: multiple definition of `_ZN10MainWindow24OnGameLaunchSplashScreenEP15GuiTitleBrowsery'; MainWindow.o:/workspaces/launchiine/src/menu/MainWindow.cpp:366: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: MainWindow.o: in function `_ZN10MainWindow18OnOpenEffectFinishEP10GuiElement':
+/workspaces/launchiine/src/menu/MainWindow.cpp:339: multiple definition of `_ZN10MainWindow18OnOpenEffectFinishEP10GuiElement'; MainWindow.o:/workspaces/launchiine/src/menu/MainWindow.cpp:339: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: MainWindow.o: in function `_ZN10MainWindowD2Ev':
+/workspaces/launchiine/src/menu/MainWindow.cpp:45: multiple definition of `_ZN10MainWindowD2Ev'; MainWindow.o:/workspaces/launchiine/src/menu/MainWindow.cpp:45: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: MainWindow.o: in function `_ZN10MainWindowD2Ev':
+/workspaces/launchiine/src/menu/MainWindow.cpp:45: multiple definition of `_ZN10MainWindowD1Ev'; MainWindow.o:/workspaces/launchiine/src/menu/MainWindow.cpp:45: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: MainWindow.o: in function `_ZN10MainWindowD0Ev':
+/workspaces/launchiine/src/menu/MainWindow.cpp:45: multiple definition of `_ZN10MainWindowD0Ev'; MainWindow.o:/workspaces/launchiine/src/menu/MainWindow.cpp:45: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: MainWindow.o: in function `_ZN10MainWindow13SetupMainViewEv':
+/workspaces/launchiine/src/menu/MainWindow.cpp:218: multiple definition of `_ZN10MainWindow13SetupMainViewEv'; MainWindow.o:/workspaces/launchiine/src/menu/MainWindow.cpp:218: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: MainWindow.o: in function `_ZN10MainWindowC2Eii':
+/workspaces/launchiine/src/menu/MainWindow.cpp:29: multiple definition of `_ZN10MainWindowC2Eii'; MainWindow.o:/workspaces/launchiine/src/menu/MainWindow.cpp:29: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: MainWindow.o: in function `_ZN10MainWindowC2Eii':
+/workspaces/launchiine/src/menu/MainWindow.cpp:29: multiple definition of `_ZN10MainWindowC1Eii'; MainWindow.o:/workspaces/launchiine/src/menu/MainWindow.cpp:29: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: Resources.o: in function `_ZNSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4pairIKS5_S6_IjP12GuiImageDataEESt10_Select1stISB_ESt4lessIS5_ESaISB_EE14_M_create_nodeIJRKSt21piecewise_construct_tSt5tupleIJOS5_EESM_IJEEEEEPSt13_Rb_tree_nodeISB_EDpOT_':
+/opt/devkitpro/devkitPPC/powerpc-eabi/include/c++/13.1.0/bits/stl_algobase.h:238: multiple definition of `_ZN9Resources5ClearEv'; Resources.o:/opt/devkitpro/devkitPPC/powerpc-eabi/include/c++/13.1.0/bits/basic_string.tcc:140: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: Resources.o:/workspaces/launchiine/src/resources/Resources.cpp:18: multiple definition of `_ZN9Resources8instanceE'; Resources.o:/workspaces/launchiine/src/resources/Resources.cpp:18: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: Resources.o: in function `_ZN9Resources7GetFileEPKc':
+/opt/devkitpro/devkitPPC/powerpc-eabi/include/c++/13.1.0/bits/char_traits.h:386: multiple definition of `_ZN9Resources7GetFileEPKc'; Resources.o:/workspaces/launchiine/src/resources/Resources.cpp:62: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: Resources.o: in function `_ZN9Resources11GetFileSizeEPKc':
+/workspaces/launchiine/src/resources/Resources.cpp:72: multiple definition of `_ZN9Resources11GetFileSizeEPKc'; Resources.o:/workspaces/launchiine/src/resources/Resources.cpp:72: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: Resources.o: in function `_ZN9Resources15RemoveImageDataEP12GuiImageData':
+/workspaces/launchiine/src/resources/Resources.cpp:110: multiple definition of `_ZN9Resources15RemoveImageDataEP12GuiImageData'; Resources.o:/workspaces/launchiine/src/resources/Resources.cpp:110: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: Resources.o: in function `_ZN9Resources11RemoveSoundEP8GuiSound':
+/workspaces/launchiine/src/resources/Resources.cpp:156: multiple definition of `_ZN9Resources11RemoveSoundEP8GuiSound'; Resources.o:/workspaces/launchiine/src/resources/Resources.cpp:156: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: Resources.o: in function `_ZN9Resources9LoadFilesEPKc':
+/workspaces/launchiine/src/resources/Resources.cpp:37: multiple definition of `_ZN9Resources9LoadFilesEPKc'; Resources.o:/workspaces/launchiine/src/resources/Resources.cpp:37: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: Resources.o: in function `_ZN9Resources12GetImageDataEPKc':
+/workspaces/launchiine/src/resources/Resources.cpp:81: multiple definition of `_ZN9Resources12GetImageDataEPKc'; Resources.o:/workspaces/launchiine/src/resources/Resources.cpp:81: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: Resources.o: in function `_ZN9Resources8GetSoundEPKc':
+/workspaces/launchiine/src/resources/Resources.cpp:127: multiple definition of `_ZN9Resources8GetSoundEPKc'; Resources.o:/workspaces/launchiine/src/resources/Resources.cpp:127: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: SplashSoundPlayer.o: in function `_ZN9__gnu_cxx17__normal_iteratorIPKhSt6vectorIhSaIhEEEC4ERKS2_':
+/opt/devkitpro/devkitPPC/powerpc-eabi/include/c++/13.1.0/bits/stl_iterator.h:1077: multiple definition of `_ZN17SplashSoundPlayer4PlayEv'; SplashSoundPlayer.o:/opt/devkitpro/devkitPPC/powerpc-eabi/include/c++/13.1.0/bits/stl_iterator.h:1077: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: SplashSoundPlayer.o: in function `_Z18LoadFileIntoBufferSt17basic_string_viewIcSt11char_traitsIcEERSt6vectorIhSaIhEE':
+/workspaces/launchiine/src/utils/SplashSoundPlayer.cpp:14: multiple definition of `_Z18LoadFileIntoBufferSt17basic_string_viewIcSt11char_traitsIcEERSt6vectorIhSaIhEE'; SplashSoundPlayer.o:/workspaces/launchiine/src/utils/SplashSoundPlayer.cpp:14: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: SplashSoundPlayer.o: in function `_ZN17SplashSoundPlayerC2ESt17basic_string_viewIcSt11char_traitsIcEE':
+/workspaces/launchiine/src/utils/SplashSoundPlayer.cpp:36: multiple definition of `_ZN17SplashSoundPlayerC2ESt17basic_string_viewIcSt11char_traitsIcEE'; SplashSoundPlayer.o:/workspaces/launchiine/src/utils/SplashSoundPlayer.cpp:36: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: SplashSoundPlayer.o: in function `_ZN17SplashSoundPlayerC2ESt17basic_string_viewIcSt11char_traitsIcEE':
+/workspaces/launchiine/src/utils/SplashSoundPlayer.cpp:36: multiple definition of `_ZN17SplashSoundPlayerC1ESt17basic_string_viewIcSt11char_traitsIcEE'; SplashSoundPlayer.o:/workspaces/launchiine/src/utils/SplashSoundPlayer.cpp:36: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: StringTools.o: in function `_ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE4sizeEv':
+/opt/devkitpro/devkitPPC/powerpc-eabi/include/c++/13.1.0/bits/basic_string.h:1071: multiple definition of `_ZN11StringTools8EndsWithERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES7_'; StringTools.o:/opt/devkitpro/devkitPPC/powerpc-eabi/include/c++/13.1.0/bits/basic_string.h:1071: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: StringTools.o: in function `_ZN11StringTools14byte_to_binaryEi':
+/workspaces/launchiine/src/utils/StringTools.cpp:38: multiple definition of `_ZN11StringTools14byte_to_binaryEi'; StringTools.o:/workspaces/launchiine/src/utils/StringTools.cpp:38: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: StringTools.o: in function `_ZN11StringTools3fmtEPKcz':
+/workspaces/launchiine/src/utils/StringTools.cpp:62: multiple definition of `_ZN11StringTools3fmtEPKcz'; StringTools.o:/workspaces/launchiine/src/utils/StringTools.cpp:62: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: StringTools.o: in function `_ZN11StringTools4wfmtEPKcz':
+/workspaces/launchiine/src/utils/StringTools.cpp:77: multiple definition of `_ZN11StringTools4wfmtEPKcz'; StringTools.o:/workspaces/launchiine/src/utils/StringTools.cpp:77: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: StringTools.o: in function `_ZN11StringTools9strprintfERNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEPKcz':
+/workspaces/launchiine/src/utils/StringTools.cpp:106: multiple definition of `_ZN11StringTools9strprintfERNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEPKcz'; StringTools.o:/workspaces/launchiine/src/utils/StringTools.cpp:106: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: StringTools.o: in function `_ZN11StringTools12char2wchar_tEPKcPw':
+/workspaces/launchiine/src/utils/StringTools.cpp:137: multiple definition of `_ZN11StringTools12char2wchar_tEPKcPw'; StringTools.o:/workspaces/launchiine/src/utils/StringTools.cpp:137: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: StringTools.o: in function `_ZN11StringTools9strtokcmpEPKcS1_S1_':
+/workspaces/launchiine/src/utils/StringTools.cpp:151: multiple definition of `_ZN11StringTools9strtokcmpEPKcS1_S1_'; StringTools.o:/workspaces/launchiine/src/utils/StringTools.cpp:151: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: StringTools.o: in function `_ZN11StringTools9strextcmpEPKcS1_c':
+/workspaces/launchiine/src/utils/StringTools.cpp:172: multiple definition of `_ZN11StringTools9strextcmpEPKcS1_c'; StringTools.o:/workspaces/launchiine/src/utils/StringTools.cpp:172: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: StringTools.o: in function `_ZN11StringTools12findStringICERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES7_':
+/workspaces/launchiine/src/utils/StringTools.cpp:206: multiple definition of `_ZN11StringTools12findStringICERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES7_'; StringTools.o:/workspaces/launchiine/src/utils/StringTools.cpp:206: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: StringTools.o: in function `_ZN11StringTools20removeCharFromStringERNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEc':
+/workspaces/launchiine/src/utils/StringTools.cpp:50: multiple definition of `_ZN11StringTools20removeCharFromStringERNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEc'; StringTools.o:/workspaces/launchiine/src/utils/StringTools.cpp:50: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: StringTools.o: in function `_ZN11StringTools6strfmtB5cxx11EPKcz':
+/workspaces/launchiine/src/utils/StringTools.cpp:122: multiple definition of `_ZN11StringTools6strfmtB5cxx11EPKcz'; StringTools.o:/workspaces/launchiine/src/utils/StringTools.cpp:122: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: StringTools.o: in function `_ZN11StringTools11stringSplitERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES7_':
+/workspaces/launchiine/src/utils/StringTools.cpp:183: multiple definition of `_ZN11StringTools11stringSplitERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES7_'; StringTools.o:/workspaces/launchiine/src/utils/StringTools.cpp:183: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: bgMusic.ogg.o: in function `bgMusic_ogg':
+(.rodata.bgMusic_ogg+0x0): multiple definition of `bgMusic_ogg'; bgMusic.ogg.o:(.rodata.bgMusic_ogg+0x0): first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: bgMusic.ogg.o: in function `bgMusic_ogg_end':
+(.rodata.bgMusic_ogg+0x3079d): multiple definition of `bgMusic_ogg_end'; bgMusic.ogg.o:(.rodata.bgMusic_ogg+0x3079d): first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: button_click.mp3.o: in function `button_click_mp3':
+(.rodata.button_click_mp3+0x0): multiple definition of `button_click_mp3'; button_click.mp3.o:(.rodata.button_click_mp3+0x0): first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: button_click.mp3.o: in function `button_click_mp3_end':
+(.rodata.button_click_mp3+0x1539): multiple definition of `button_click_mp3_end'; button_click.mp3.o:(.rodata.button_click_mp3+0x1539): first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: entry.o: in function `main':
+/workspaces/launchiine/src/entry.cpp:8: multiple definition of `main'; entry.o:/workspaces/launchiine/src/entry.cpp:8: first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: font.ttf.o: in function `font_ttf':
+(.rodata.font_ttf+0x0): multiple definition of `font_ttf'; font.ttf.o:(.rodata.font_ttf+0x0): first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: font.ttf.o: in function `font_ttf_end':
+(.rodata.font_ttf+0xd944): multiple definition of `font_ttf_end'; font.ttf.o:(.rodata.font_ttf+0xd944): first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: iconEmpty.png.o: in function `iconEmpty_png':
+(.rodata.iconEmpty_png+0x0): multiple definition of `iconEmpty_png'; iconEmpty.png.o:(.rodata.iconEmpty_png+0x0): first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: iconEmpty.png.o: in function `iconEmpty_png_end':
+(.rodata.iconEmpty_png+0x635c): multiple definition of `iconEmpty_png_end'; iconEmpty.png.o:(.rodata.iconEmpty_png+0x635c): first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: layoutSwitchButton.png.o: in function `layoutSwitchButton_png':
+(.rodata.layoutSwitchButton_png+0x0): multiple definition of `layoutSwitchButton_png'; layoutSwitchButton.png.o:(.rodata.layoutSwitchButton_png+0x0): first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: layoutSwitchButton.png.o: in function `layoutSwitchButton_png_end':
+(.rodata.layoutSwitchButton_png+0x1d27): multiple definition of `layoutSwitchButton_png_end'; layoutSwitchButton.png.o:(.rodata.layoutSwitchButton_png+0x1d27): first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: leftArrow.png.o: in function `leftArrow_png':
+(.rodata.leftArrow_png+0x0): multiple definition of `leftArrow_png'; leftArrow.png.o:(.rodata.leftArrow_png+0x0): first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: leftArrow.png.o: in function `leftArrow_png_end':
+(.rodata.leftArrow_png+0x3315): multiple definition of `leftArrow_png_end'; leftArrow.png.o:(.rodata.leftArrow_png+0x3315): first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: noGameIcon.png.o: in function `noGameIcon_png':
+(.rodata.noGameIcon_png+0x0): multiple definition of `noGameIcon_png'; noGameIcon.png.o:(.rodata.noGameIcon_png+0x0): first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: noGameIcon.png.o: in function `noGameIcon_png_end':
+(.rodata.noGameIcon_png+0x2492): multiple definition of `noGameIcon_png_end'; noGameIcon.png.o:(.rodata.noGameIcon_png+0x2492): first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: rightArrow.png.o: in function `rightArrow_png':
+(.rodata.rightArrow_png+0x0): multiple definition of `rightArrow_png'; rightArrow.png.o:(.rodata.rightArrow_png+0x0): first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: rightArrow.png.o: in function `rightArrow_png_end':
+(.rodata.rightArrow_png+0x3d4c): multiple definition of `rightArrow_png_end'; rightArrow.png.o:(.rodata.rightArrow_png+0x3d4c): first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: settingsButton.png.o: in function `settingsButton_png':
+(.rodata.settingsButton_png+0x0): multiple definition of `settingsButton_png'; settingsButton.png.o:(.rodata.settingsButton_png+0x0): first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: settingsButton.png.o: in function `settingsButton_png_end':
+(.rodata.settingsButton_png+0x2a80): multiple definition of `settingsButton_png_end'; settingsButton.png.o:(.rodata.settingsButton_png+0x2a80): first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: settings_click_2.mp3.o: in function `settings_click_2_mp3':
+(.rodata.settings_click_2_mp3+0x0): multiple definition of `settings_click_2_mp3'; settings_click_2.mp3.o:(.rodata.settings_click_2_mp3+0x0): first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: settings_click_2.mp3.o: in function `settings_click_2_mp3_end':
+(.rodata.settings_click_2_mp3+0x1a1f): multiple definition of `settings_click_2_mp3_end'; settings_click_2.mp3.o:(.rodata.settings_click_2_mp3+0x1a1f): first defined here
+/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld: utils.o: in function `dumpHex':
+/workspaces/launchiine/src/utils/utils.c:11: multiple definition of `dumpHex'; utils.o:/workspaces/launchiine/src/utils/utils.c:11: first defined here
+collect2: error: ld returned 1 exit status
+make[1]: *** [/opt/devkitpro//wut/share/wut_rules:79: /workspaces/launchiine/men.elf] Error 1
 make: *** [Makefile:110: build] Error 2
