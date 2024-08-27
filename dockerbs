@@ -1,0 +1,515 @@
+root ➜ /workspaces/launchiine (master) $ docker run -it --rm -v ${PWD}:/project launchiine-builder make -j4
+iconEmpty.png
+layoutSwitchButton.png
+leftArrow.png
+noGameIcon.png
+rightArrow.png
+settingsButton.png
+bgMusic.ogg
+bootSound.mp3
+button_click.mp3
+settings_click_2.mp3
+font.ttf
+Application.cpp
+entry.cpp
+CFile.cpp
+DirList.cpp
+FSUtils.cpp
+GameList.cpp
+In file included from /project/src/gui/GuiImage.h:17,
+                 from /opt/devkitpro/wut/usr/include/gui/GuiImageAsync.h:22,
+                 from /project/src/gui/GameBgImage.h:4,
+                 from /project/src/gui/Gui.h:18,
+                 from /project/src/menu/MainDrcButtonsFrame.h:17,
+                 from /project/src/menu/MainWindow.h:18,
+                 from /project/src/Application.h:17,
+                 from /project/src/entry.cpp:1:
+/project/src/gui/GuiElement.h:171:19: error: expected unqualified-id before 'using'
+  171 |     virtual float using getWidth() {
+      |                   ^~~~~
+/project/src/gui/GuiElement.h:177:19: error: expected unqualified-id before 'using'
+  177 |     virtual float using getHeight() {
+      |                   ^~~~~
+/project/src/gui/GuiElement.h:184:18: error: expected unqualified-id before 'using'
+  184 |     virtual void using setSize(float w, float h) {
+      |                  ^~~~~
+/project/src/gui/GuiElement.h: In member function 'virtual float GuiElement::getCenterX()':
+/project/src/gui/GuiElement.h:107:41: error: 'class GuiElement' has no member named 'getWidth'
+  107 |                 pWidth = parentElement->getWidth();
+      |                                         ^~~~~~~~
+/project/src/gui/GuiElement.h:117:41: error: 'class GuiElement' has no member named 'getWidth'
+  117 |                 pWidth = parentElement->getWidth();
+      |                                         ^~~~~~~~
+/project/src/gui/GuiElement.h: In member function 'virtual float GuiElement::getCenterY()':
+/project/src/gui/GuiElement.h:140:42: error: 'class GuiElement' has no member named 'getHeight'; did you mean 'height'?
+  140 |                 pHeight = parentElement->getHeight();
+      |                                          ^~~~~~~~~
+      |                                          height
+/project/src/gui/GuiElement.h:144:51: error: 'getHeight' was not declared in this scope; did you mean 'pHeight'?
+  144 |             pCenterY += pHeight * 0.5f * pScale - getHeight() * 0.5f * getScaleY();
+      |                                                   ^~~~~~~~~
+      |                                                   pHeight
+/project/src/gui/GuiElement.h:150:42: error: 'class GuiElement' has no member named 'getHeight'; did you mean 'height'?
+  150 |                 pHeight = parentElement->getHeight();
+      |                                          ^~~~~~~~~
+      |                                          height
+/project/src/gui/GuiElement.h:154:51: error: 'getHeight' was not declared in this scope; did you mean 'pHeight'?
+  154 |             pCenterY -= pHeight * 0.5f * pScale - getHeight() * 0.5f * getScaleY();
+      |                                                   ^~~~~~~~~
+      |                                                   pHeight
+/project/src/gui/GuiElement.h: In member function 'virtual bool GuiElement::isInside(float, float)':
+/project/src/gui/GuiElement.h:454:57: error: 'getWidth' was not declared in this scope; did you mean 'getuid'?
+  454 |         return (x > (this->getCenterX() - getScaleX() * getWidth() * 0.5f) && x < (this->getCenterX() + getScaleX() * getWidth() * 0.5f) && y > (this->getCenterY() - getScaleY() * getHeight() * 0.5f) && y < (this->getCenterY() + getScaleY() * getHeight() * 0.5f));
+      |                                                         ^~~~~~~~
+      |                                                         getuid
+/project/src/gui/GuiElement.h:454:181: error: 'getHeight' was not declared in this scope; did you mean 'height'?
+  454 |         return (x > (this->getCenterX() - getScaleX() * getWidth() * 0.5f) && x < (this->getCenterX() + getScaleX() * getWidth() * 0.5f) && y > (this->getCenterY() - getScaleY() * getHeight() * 0.5f) && y < (this->getCenterY() + getScaleY() * getHeight() * 0.5f));
+      |                                                                                                                                                                                     ^~~~~~~~~
+      |                                                                                                                                                                                     height
+/project/src/gui/GuiImage.h: At global scope:
+/project/src/gui/GuiImage.h:59:10: error: expected unqualified-id before 'using'
+   59 |     void using draw(CVideo *pVideo);
+      |          ^~~~~
+/project/src/gui/GuiElement.h:510:18: warning: 'virtual void GuiElement::draw(CVideo*)' was hidden [-Woverloaded-virtual=]
+  510 |     virtual void draw(CVideo *v) {}
+      |                  ^~~~
+In file included from /project/src/gui/Gui.h:19:
+/opt/devkitpro/wut/usr/include/gui/GridBackground.h:24:10: note:   by 'void GridBackground::draw(CVideo*, const glm::mat4&)'
+   24 |     void draw(CVideo *pVideo, const glm::mat4 &modelView);
+      |          ^~~~
+In file included from /project/src/gui/GuiImage.h:17,
+                 from /opt/devkitpro/wut/usr/include/gui/GuiImageAsync.h:22,
+                 from /project/src/gui/GameBgImage.h:4,
+                 from /project/src/gui/Gui.h:18,
+                 from /project/src/menu/MainDrcButtonsFrame.h:17,
+                 from /project/src/menu/MainWindow.h:18,
+                 from /project/src/Application.h:17,
+                 from /project/src/Application.cpp:1:
+/project/src/gui/GuiElement.h:171:19: error: expected unqualified-id before 'using'
+  171 |     virtual float using getWidth() {
+      |                   ^~~~~
+/project/src/gui/GuiElement.h:177:19: error: expected unqualified-id before 'using'
+  177 |     virtual float using getHeight() {
+      |                   ^~~~~
+/project/src/gui/GuiElement.h:184:18: error: expected unqualified-id before 'using'
+  184 |     virtual void using setSize(float w, float h) {
+      |                  ^~~~~
+/project/src/gui/GuiElement.h: In member function 'virtual float GuiElement::getCenterX()':
+/project/src/gui/GuiElement.h:107:41: error: 'class GuiElement' has no member named 'getWidth'
+  107 |                 pWidth = parentElement->getWidth();
+      |                                         ^~~~~~~~
+/project/src/gui/GuiElement.h:117:41: error: 'class GuiElement' has no member named 'getWidth'
+  117 |                 pWidth = parentElement->getWidth();
+      |                                         ^~~~~~~~
+/project/src/gui/GuiElement.h: In member function 'virtual float GuiElement::getCenterY()':
+/project/src/gui/GuiElement.h:140:42: error: 'class GuiElement' has no member named 'getHeight'; did you mean 'height'?
+  140 |                 pHeight = parentElement->getHeight();
+      |                                          ^~~~~~~~~
+      |                                          height
+/project/src/gui/GuiElement.h:144:51: error: 'getHeight' was not declared in this scope; did you mean 'pHeight'?
+  144 |             pCenterY += pHeight * 0.5f * pScale - getHeight() * 0.5f * getScaleY();
+      |                                                   ^~~~~~~~~
+      |                                                   pHeight
+/project/src/gui/GuiElement.h:150:42: error: 'class GuiElement' has no member named 'getHeight'; did you mean 'height'?
+  150 |                 pHeight = parentElement->getHeight();
+      |                                          ^~~~~~~~~
+      |                                          height
+/project/src/gui/GuiElement.h:154:51: error: 'getHeight' was not declared in this scope; did you mean 'pHeight'?
+  154 |             pCenterY -= pHeight * 0.5f * pScale - getHeight() * 0.5f * getScaleY();
+      |                                                   ^~~~~~~~~
+      |                                                   pHeight
+/project/src/gui/GuiElement.h: In member function 'virtual bool GuiElement::isInside(float, float)':
+/project/src/gui/GuiElement.h:454:57: error: 'getWidth' was not declared in this scope; did you mean 'getuid'?
+  454 |         return (x > (this->getCenterX() - getScaleX() * getWidth() * 0.5f) && x < (this->getCenterX() + getScaleX() * getWidth() * 0.5f) && y > (this->getCenterY() - getScaleY() * getHeight() * 0.5f) && y < (this->getCenterY() + getScaleY() * getHeight() * 0.5f));
+      |                                                         ^~~~~~~~
+      |                                                         getuid
+In file included from /project/src/gui/Gui.h:30:
+/opt/devkitpro/wut/usr/include/gui/GuiScrollbar.h: In member function 'void GuiScrollbar::setImageArrowDown(GuiImage*)':
+/opt/devkitpro/wut/usr/include/gui/GuiScrollbar.h:89:27: error: 'class GuiButton' has no member named 'setSize'
+   89 |             arrowDownBtn->setSize(img->getWidth(), img->getHeight());
+      |                           ^~~~~~~
+/opt/devkitpro/wut/usr/include/gui/GuiScrollbar.h:89:40: error: 'class GuiImage' has no member named 'getWidth'
+   89 |             arrowDownBtn->setSize(img->getWidth(), img->getHeight());
+      |                                        ^~~~~~~~
+/opt/devkitpro/wut/usr/include/gui/GuiScrollbar.h:89:57: error: 'class GuiImage' has no member named 'getHeight'; did you mean 'float GuiElement::height'? (not accessible from this context)
+   89 |             arrowDownBtn->setSize(img->getWidth(), img->getHeight());
+      |                                                         ^~~~~~~~~
+/project/src/gui/GuiElement.h:563:11: note: declared protected here
+  563 |     float height;                  //!< Element height
+      |           ^~~~~~
+/opt/devkitpro/wut/usr/include/gui/GuiScrollbar.h: In member function 'void GuiScrollbar::setImageArrowUp(GuiImage*)':
+/opt/devkitpro/wut/usr/include/gui/GuiScrollbar.h:97:25: error: 'class GuiButton' has no member named 'setSize'
+   97 |             arrowUpBtn->setSize(img->getWidth(), img->getHeight());
+      |                         ^~~~~~~
+/opt/devkitpro/wut/usr/include/gui/GuiScrollbar.h:97:38: error: 'class GuiImage' has no member named 'getWidth'
+   97 |             arrowUpBtn->setSize(img->getWidth(), img->getHeight());
+      |                                      ^~~~~~~~
+/opt/devkitpro/wut/usr/include/gui/GuiScrollbar.h:97:55: error: 'class GuiImage' has no member named 'getHeight'; did you mean 'float GuiElement::height'? (not accessible from this context)
+   97 |             arrowUpBtn->setSize(img->getWidth(), img->getHeight());
+      |                                                       ^~~~~~~~~
+/project/src/gui/GuiElement.h:563:11: note: declared protected here
+  563 |     float height;                  //!< Element height
+      |           ^~~~~~
+/opt/devkitpro/wut/usr/include/gui/GuiScrollbar.h: In member function 'void GuiScrollbar::setImageScrollbarBox(GuiImage*)':
+/opt/devkitpro/wut/usr/include/gui/GuiScrollbar.h:105:30: error: 'class GuiButton' has no member named 'setSize'
+  105 |             scrollbarBoxBtn->setSize(img->getWidth(), height);
+      |                              ^~~~~~~
+/opt/devkitpro/wut/usr/include/gui/GuiScrollbar.h:105:43: error: 'class GuiImage' has no member named 'getWidth'
+  105 |             scrollbarBoxBtn->setSize(img->getWidth(), height);
+      |                                           ^~~~~~~~
+/opt/devkitpro/wut/usr/include/gui/GuiScrollbar.h:108:26: error: 'class GuiImage' has no member named 'getWidth'
+  108 |             width = img->getWidth();
+      |                          ^~~~~~~~
+/opt/devkitpro/wut/usr/include/gui/GuiScrollbar.h:110:54: error: 'class GuiImage' has no member named 'getHeight'; did you mean 'float GuiElement::height'? (not accessible from this context)
+  110 |             MaxHeight = height * 0.5f - (img ? (img->getHeight() * 0.5f) : 0) - (arrowUpImage ? arrowUpImage->getHeight() : 0);
+      |                                                      ^~~~~~~~~
+/project/src/gui/GuiElement.h:563:11: note: declared protected here
+  563 |     float height;                  //!< Element height
+      |           ^~~~~~
+/opt/devkitpro/wut/usr/include/gui/GuiScrollbar.h:110:111: error: 'class GuiImage' has no member named 'getHeight'; did you mean 'float GuiElement::height'? (not accessible from this context)
+  110 |             MaxHeight = height * 0.5f - (img ? (img->getHeight() * 0.5f) : 0) - (arrowUpImage ? arrowUpImage->getHeight() : 0);
+      |                                                                                                               ^~~~~~~~~
+/project/src/gui/GuiElement.h:563:11: note: declared protected here
+  563 |     float height;                  //!< Element height
+      |           ^~~~~~
+/opt/devkitpro/wut/usr/include/gui/GuiScrollbar.h:111:55: error: 'class GuiImage' has no member named 'getHeight'; did you mean 'float GuiElement::height'? (not accessible from this context)
+  111 |             MinHeight = -height * 0.5f + (img ? (img->getHeight() * 0.5f) : 0) + (arrowDownImage ? arrowDownImage->getHeight() : 0);
+      |                                                       ^~~~~~~~~
+/project/src/gui/GuiElement.h:563:11: note: declared protected here
+  563 |     float height;                  //!< Element height
+      |           ^~~~~~
+/opt/devkitpro/wut/usr/include/gui/GuiScrollbar.h:111:116: error: 'class GuiImage' has no member named 'getHeight'; did you mean 'float GuiElement::height'? (not accessible from this context)
+  111 |             MinHeight = -height * 0.5f + (img ? (img->getHeight() * 0.5f) : 0) + (arrowDownImage ? arrowDownImage->getHeight() : 0);
+      |                                                                                                                    ^~~~~~~~~
+/project/src/gui/GuiElement.h:563:11: note: declared protected here
+  563 |     float height;                  //!< Element height
+      |           ^~~~~~
+/project/src/gui/GuiElement.h:454:181: error: 'getHeight' was not declared in this scope; did you mean 'height'?
+  454 |  x < (this->getCenterX() + getScaleX() * getWidth() * 0.5f) && y > (this->getCenterY() - getScaleY() * getHeight() * 0.5f) && y < (this->getCenterY() + getScaleY() * getHeight() * 0.5f));
+      |                                                                                                        ^~~~~~~~~
+      |                                                                                                        height
+/project/src/gui/GuiImage.h: At global scope:
+/project/src/gui/GuiImage.h:59:10: error: expected unqualified-id before 'using'
+   59 |     void using draw(CVideo *pVideo);
+      |          ^~~~~
+/project/src/gui/GuiElement.h:510:18: warning: 'virtual void GuiElement::draw(CVideo*)' was hidden [-Woverloaded-virtual=]
+  510 |     virtual void draw(CVideo *v) {}
+      |                  ^~~~
+In file included from /project/src/gui/Gui.h:19:
+/opt/devkitpro/wut/usr/include/gui/GridBackground.h:24:10: note:   by 'void GridBackground::draw(CVideo*, const glm::mat4&)'
+   24 |     void draw(CVideo *pVideo, const glm::mat4 &modelView);
+      |          ^~~~
+GameIcon.cpp
+/project/src/menu/MainDrcButtonsFrame.h: In constructor 'MainDrcButtonsFrame::MainDrcButtonsFrame(int32_t, int32_t)':
+/project/src/menu/MainDrcButtonsFrame.h:25:73: error: 'class GuiImage' has no member named 'getWidth'
+   25 |           settingsIcon(settingsIconData), switchLayoutButton(switchIcon.getWidth(), switchIcon.getHeight()), settingsButton(settingsIcon.getWidth(), settingsIcon.getHeight()),
+      |                                                                         ^~~~~~~~
+/project/src/menu/MainDrcButtonsFrame.h:25:96: error: 'class GuiImage' has no member named 'getHeight'; did you mean 'float GuiElement::height'? (not accessible from this context)
+   25 |           settingsIcon(settingsIconData), switchLayoutButton(switchIcon.getWidth(), switchIcon.getHeight()), settingsButton(settingsIcon.getWidth(), settingsIcon.getHeight()),
+      |                                                                                                ^~~~~~~~~
+/project/src/gui/GuiElement.h:563:11: note: declared protected here
+  563 |     float height;                  //!< Element height
+      |           ^~~~~~
+/project/src/menu/MainDrcButtonsFrame.h:25:138: error: 'class GuiImage' has no member named 'getWidth'
+   25 |           settingsIcon(settingsIconData), switchLayoutButton(switchIcon.getWidth(), switchIcon.getHeight()), settingsButton(settingsIcon.getWidth(), settingsIcon.getHeight()),
+      |                                                                                                                                          ^~~~~~~~
+/project/src/menu/MainDrcButtonsFrame.h:25:163: error: 'class GuiImage' has no member named 'getHeight'; did you mean 'float GuiElement::height'? (not accessible from this context)
+   25 |           settingsIcon(settingsIconData), switchLayoutButton(switchIcon.getWidth(), switchIcon.getHeight()), settingsButton(settingsIcon.getWidth(), settingsIcon.getHeight()),
+      |                                                                                                                                                                   ^~~~~~~~~
+/project/src/gui/GuiElement.h:563:11: note: declared protected here
+  563 |     float height;                  //!< Element height
+      |           ^~~~~~
+In file included from /project/src/gui/Gui.h:30:
+/opt/devkitpro/wut/usr/include/gui/GuiScrollbar.h: In member function 'void GuiScrollbar::setImageArrowDown(GuiImage*)':
+/opt/devkitpro/wut/usr/include/gui/GuiScrollbar.h:89:27: error: 'class GuiButton' has no member named 'setSize'
+   89 |             arrowDownBtn->setSize(img->getWidth(), img->getHeight());
+      |                           ^~~~~~~
+/opt/devkitpro/wut/usr/include/gui/GuiScrollbar.h:89:40: error: 'class GuiImage' has no member named 'getWidth'
+   89 |             arrowDownBtn->setSize(img->getWidth(), img->getHeight());
+      |                                        ^~~~~~~~
+/opt/devkitpro/wut/usr/include/gui/GuiScrollbar.h:89:57: error: 'class GuiImage' has no member named 'getHeight'; did you mean 'float GuiElement::height'? (not accessible from this context)
+   89 |             arrowDownBtn->setSize(img->getWidth(), img->getHeight());
+      |                                                         ^~~~~~~~~
+/project/src/gui/GuiElement.h:563:11: note: declared protected here
+  563 |     float height;                  //!< Element height
+      |           ^~~~~~
+/opt/devkitpro/wut/usr/include/gui/GuiScrollbar.h: In member function 'void GuiScrollbar::setImageArrowUp(GuiImage*)':
+/opt/devkitpro/wut/usr/include/gui/GuiScrollbar.h:97:25: error: 'class GuiButton' has no member named 'setSize'
+   97 |             arrowUpBtn->setSize(img->getWidth(), img->getHeight());
+      |                         ^~~~~~~
+/opt/devkitpro/wut/usr/include/gui/GuiScrollbar.h:97:38: error: 'class GuiImage' has no member named 'getWidth'
+   97 |             arrowUpBtn->setSize(img->getWidth(), img->getHeight());
+      |                                      ^~~~~~~~
+/opt/devkitpro/wut/usr/include/gui/GuiScrollbar.h:97:55: error: 'class GuiImage' has no member named 'getHeight'; did you mean 'float GuiElement::height'? (not accessible from this context)
+   97 |             arrowUpBtn->setSize(img->getWidth(), img->getHeight());
+      |                                                       ^~~~~~~~~
+/project/src/gui/GuiElement.h:563:11: note: declared protected here
+  563 |     float height;                  //!< Element height
+      |           ^~~~~~
+/opt/devkitpro/wut/usr/include/gui/GuiScrollbar.h: In member function 'void GuiScrollbar::setImageScrollbarBox(GuiImage*)':
+/opt/devkitpro/wut/usr/include/gui/GuiScrollbar.h:105:30: error: 'class GuiButton' has no member named 'setSize'
+  105 |             scrollbarBoxBtn->setSize(img->getWidth(), height);
+      |                              ^~~~~~~
+/opt/devkitpro/wut/usr/include/gui/GuiScrollbar.h:105:43: error: 'class GuiImage' has no member named 'getWidth'
+  105 |             scrollbarBoxBtn->setSize(img->getWidth(), height);
+      |                                           ^~~~~~~~
+/opt/devkitpro/wut/usr/include/gui/GuiScrollbar.h:108:26: error: 'class GuiImage' has no member named 'getWidth'
+  108 |             width = img->getWidth();
+      |                          ^~~~~~~~
+/opt/devkitpro/wut/usr/include/gui/GuiScrollbar.h:110:54: error: 'class GuiImage' has no member named 'getHeight'; did you mean 'float GuiElement::height'? (not accessible from this context)
+  110 |             MaxHeight = height * 0.5f - (img ? (img->getHeight() * 0.5f) : 0) - (arrowUpImage ? arrowUpImage->getHeight() : 0);
+      |                                                      ^~~~~~~~~
+/project/src/gui/GuiElement.h:563:11: note: declared protected here
+  563 |     float height;                  //!< Element height
+      |           ^~~~~~
+/opt/devkitpro/wut/usr/include/gui/GuiScrollbar.h:110:111: error: 'class GuiImage' has no member named 'getHeight'; did you mean 'float GuiElement::height'? (not accessible from this context)
+  110 |      MaxHeight = height * 0.5f - (img ? (img->getHeight() * 0.5f) : 0) - (arrowUpImage ? arrowUpImage->getHeight() : 0);
+      |                                                                                                        ^~~~~~~~~
+
+/project/src/gui/GuiElement.h:563:11: note: declared protected here
+  563 |     float height;                  //!< Element height
+      |           ^~~~~~
+/opt/devkitpro/wut/usr/include/gui/GuiScrollbar.h:111:55: error: 'class GuiImage' has no member named 'getHeight'; did you mean 'float GuiElement::height'? (not accessible from this context)
+  111 |             MinHeight = -height * 0.5f + (img ? (img->getHeight() * 0.5f) : 0) + (arrowDownImage ? arrowDownImage->getHeight() : 0);
+      |                                                       ^~~~~~~~~
+/project/src/gui/GuiElement.h:563:11: note: declared protected here
+  563 |     float height;                  //!< Element height
+      |           ^~~~~~
+/opt/devkitpro/wut/usr/include/gui/GuiScrollbar.h:111:116: error: 'class GuiImage' has no member named 'getHeight'; did you mean 'float GuiElement::height'? (not accessible from this context)
+  111 | MinHeight = -height * 0.5f + (img ? (img->getHeight() * 0.5f) : 0) + (arrowDownImage ? arrowDownImage->getHeight() : 0);
+      |                                                                                                        ^~~~~~~~~
+
+/project/src/gui/GuiElement.h:563:11: note: declared protected here
+  563 |     float height;                  //!< Element height
+      |           ^~~~~~
+/project/src/menu/MainDrcButtonsFrame.h: In constructor 'MainDrcButtonsFrame::MainDrcButtonsFrame(int32_t, int32_t)':
+/project/src/menu/MainDrcButtonsFrame.h:25:73: error: 'class GuiImage' has no member named 'getWidth'
+   25 |           settingsIcon(settingsIconData), switchLayoutButton(switchIcon.getWidth(), switchIcon.getHeight()), settingsButton(settingsIcon.getWidth(), settingsIcon.getHeight()),
+      |                                                                         ^~~~~~~~
+/project/src/menu/MainDrcButtonsFrame.h:25:96: error: 'class GuiImage' has no member named 'getHeight'; did you mean 'float GuiElement::height'? (not accessible from this context)
+   25 |           settingsIcon(settingsIconData), switchLayoutButton(switchIcon.getWidth(), switchIcon.getHeight()), settingsButton(settingsIcon.getWidth(), settingsIcon.getHeight()),
+      |                                                                                                ^~~~~~~~~
+/project/src/gui/GuiElement.h:563:11: note: declared protected here
+  563 |     float height;                  //!< Element height
+      |           ^~~~~~
+/project/src/menu/MainDrcButtonsFrame.h:25:138: error: 'class GuiImage' has no member named 'getWidth'
+   25 | nData), switchLayoutButton(switchIcon.getWidth(), switchIcon.getHeight()), settingsButton(settingsIcon.getWidth(), settingsIcon.getHeight()),
+      |                                                                                                        ^~~~~~~~
+
+/project/src/menu/MainDrcButtonsFrame.h:25:163: error: 'class GuiImage' has no member named 'getHeight'; did you mean 'float GuiElement::height'? (not accessible from this context)
+   25 | n(switchIcon.getWidth(), switchIcon.getHeight()), settingsButton(settingsIcon.getWidth(), settingsIcon.getHeight()),
+      |                                                                                                        ^~~~~~~~~
+
+/project/src/gui/GuiElement.h:563:11: note: declared protected here
+  563 |     float height;                  //!< Element height
+      |           ^~~~~~
+make[1]: *** [/opt/devkitpro/devkitPPC/base_rules:15: entry.o] Error 1
+make[1]: *** Waiting for unfinished jobs....
+In file included from /opt/devkitpro/wut/usr/include/gui/GuiImageData.h:21,
+                 from /project/src/game/GameList.h:6,
+                 from /project/src/game/GameList.cpp:8:
+/project/src/gui/GuiElement.h:171:19: error: expected unqualified-id before 'using'
+  171 |     virtual float using getWidth() {
+      |                   ^~~~~
+/project/src/gui/GuiElement.h:177:19: error: expected unqualified-id before 'using'
+  177 |     virtual float using getHeight() {
+      |                   ^~~~~
+/project/src/gui/GuiElement.h:184:18: error: expected unqualified-id before 'using'
+  184 |     virtual void using setSize(float w, float h) {
+      |                  ^~~~~
+/project/src/gui/GuiElement.h: In member function 'virtual float GuiElement::getCenterX()':
+/project/src/gui/GuiElement.h:107:41: error: 'class GuiElement' has no member named 'getWidth'
+  107 |                 pWidth = parentElement->getWidth();
+      |                                         ^~~~~~~~
+/project/src/gui/GuiElement.h:117:41: error: 'class GuiElement' has no member named 'getWidth'
+  117 |                 pWidth = parentElement->getWidth();
+      |                                         ^~~~~~~~
+/project/src/gui/GuiElement.h: In member function 'virtual float GuiElement::getCenterY()':
+/project/src/gui/GuiElement.h:140:42: error: 'class GuiElement' has no member named 'getHeight'; did you mean 'height'?
+  140 |                 pHeight = parentElement->getHeight();
+      |                                          ^~~~~~~~~
+      |                                          height
+/project/src/gui/GuiElement.h:144:51: error: 'getHeight' was not declared in this scope; did you mean 'pHeight'?
+  144 |             pCenterY += pHeight * 0.5f * pScale - getHeight() * 0.5f * getScaleY();
+      |                                                   ^~~~~~~~~
+      |                                                   pHeight
+/project/src/gui/GuiElement.h:150:42: error: 'class GuiElement' has no member named 'getHeight'; did you mean 'height'?
+  150 |                 pHeight = parentElement->getHeight();
+      |                                          ^~~~~~~~~
+      |                                          height
+/project/src/gui/GuiElement.h:154:51: error: 'getHeight' was not declared in this scope; did you mean 'pHeight'?
+  154 |             pCenterY -= pHeight * 0.5f * pScale - getHeight() * 0.5f * getScaleY();
+      |                                                   ^~~~~~~~~
+      |                                                   pHeight
+/project/src/gui/GuiElement.h: In member function 'virtual bool GuiElement::isInside(float, float)':
+/project/src/gui/GuiElement.h:454:57: error: 'getWidth' was not declared in this scope; did you mean 'getuid'?
+  454 |         return (x > (this->getCenterX() - getScaleX() * getWidth() * 0.5f) && x < (this->getCenterX() + getScaleX() * getWidth() * 0.5f) && y > (this->getCenterY() - getScaleY() * getHeight() * 0.5f) && y < (this->getCenterY() + getScaleY() * getHeight() * 0.5f));
+      |                                                         ^~~~~~~~
+      |                                                         getuid
+/project/src/gui/GuiElement.h:454:181: error: 'getHeight' was not declared in this scope; did you mean 'height'?
+  454 |         return (x > (this->getCenterX() - getScaleX() * getWidth() * 0.5f) && x < (this->getCenterX() + getScaleX() * getWidth() * 0.5f) && y > (this->getCenterY() - getScaleY() * getHeight() * 0.5f) && y < (this->getCenterY() + getScaleY() * getHeight() * 0.5f));
+      |                                                                                                                                                                                     ^~~~~~~~~
+      |                                                                                                                                                                                     height
+make[1]: *** [/opt/devkitpro/devkitPPC/base_rules:15: Application.o] Error 1
+In file included from /project/src/gui/GuiImage.h:17,
+                 from /opt/devkitpro/wut/usr/include/gui/GuiImageAsync.h:22,
+                 from /project/src/gui/GameIcon.h:4,
+                 from /project/src/gui/GameIcon.cpp:1:
+/project/src/gui/GuiElement.h:171:19: error: expected unqualified-id before 'using'
+  171 |     virtual float using getWidth() {
+      |                   ^~~~~
+/project/src/gui/GuiElement.h:177:19: error: expected unqualified-id before 'using'
+  177 |     virtual float using getHeight() {
+      |                   ^~~~~
+/project/src/gui/GuiElement.h:184:18: error: expected unqualified-id before 'using'
+  184 |     virtual void using setSize(float w, float h) {
+      |                  ^~~~~
+/project/src/gui/GuiElement.h: In member function 'virtual float GuiElement::getCenterX()':
+/project/src/gui/GuiElement.h:107:41: error: 'class GuiElement' has no member named 'getWidth'
+  107 |                 pWidth = parentElement->getWidth();
+      |                                         ^~~~~~~~
+/project/src/gui/GuiElement.h:117:41: error: 'class GuiElement' has no member named 'getWidth'
+  117 |                 pWidth = parentElement->getWidth();
+      |                                         ^~~~~~~~
+/project/src/gui/GuiElement.h: In member function 'virtual float GuiElement::getCenterY()':
+/project/src/gui/GuiElement.h:140:42: error: 'class GuiElement' has no member named 'getHeight'; did you mean 'height'?
+  140 |                 pHeight = parentElement->getHeight();
+      |                                          ^~~~~~~~~
+      |                                          height
+/project/src/gui/GuiElement.h:144:51: error: 'getHeight' was not declared in this scope; did you mean 'pHeight'?
+  144 |             pCenterY += pHeight * 0.5f * pScale - getHeight() * 0.5f * getScaleY();
+      |                                                   ^~~~~~~~~
+      |                                                   pHeight
+/project/src/gui/GuiElement.h:150:42: error: 'class GuiElement' has no member named 'getHeight'; did you mean 'height'?
+  150 |                 pHeight = parentElement->getHeight();
+      |                                          ^~~~~~~~~
+      |                                          height
+/project/src/gui/GuiElement.h:154:51: error: 'getHeight' was not declared in this scope; did you mean 'pHeight'?
+  154 |             pCenterY -= pHeight * 0.5f * pScale - getHeight() * 0.5f * getScaleY();
+      |                                                   ^~~~~~~~~
+      |                                                   pHeight
+/project/src/gui/GuiElement.h: In member function 'virtual bool GuiElement::isInside(float, float)':
+/project/src/gui/GuiElement.h:454:57: error: 'getWidth' was not declared in this scope; did you mean 'getuid'?
+  454 |         return (x > (this->getCenterX() - getScaleX() * getWidth() * 0.5f) && x < (this->getCenterX() + getScaleX() * getWidth() * 0.5f) && y > (this->getCenterY() - getScaleY() * getHeight() * 0.5f) && y < (this->getCenterY() + getScaleY() * getHeight() * 0.5f));
+      |                                                         ^~~~~~~~
+      |                                                         getuid
+/project/src/gui/GuiElement.h:454:181: error: 'getHeight' was not declared in this scope; did you mean 'height'?
+  454 |         return (x > (this->getCenterX() - getScaleX() * getWidth() * 0.5f) && x < (this->getCenterX() + getScaleX() * getWidth() * 0.5f) && y > (this->getCenterY() - getScaleY() * getHeight() * 0.5f) && y < (this->getCenterY() + getScaleY() * getHeight() * 0.5f));
+      |                                                                                                                                                                                     ^~~~~~~~~
+      |                                                                                                                                                                                     height
+/project/src/gui/GuiImage.h: At global scope:
+/project/src/gui/GuiImage.h:59:10: error: expected unqualified-id before 'using'
+   59 |     void using draw(CVideo *pVideo);
+      |          ^~~~~
+/project/src/gui/GuiElement.h:510:18: warning: 'virtual void GuiElement::draw(CVideo*)' was hidden [-Woverloaded-virtual=]
+  510 |     virtual void draw(CVideo *v) {}
+      |                  ^~~~
+In file included from /project/src/gui/Gui.h:19,
+                 from /project/src/menu/MainDrcButtonsFrame.h:17,
+                 from /project/src/menu/MainWindow.h:18,
+                 from /project/src/Application.h:17,
+                 from /project/src/gui/GameIcon.cpp:2:
+/opt/devkitpro/wut/usr/include/gui/GridBackground.h:24:10: note:   by 'void GridBackground::draw(CVideo*, const glm::mat4&)'
+   24 |     void draw(CVideo *pVideo, const glm::mat4 &modelView);
+      |          ^~~~
+In file included from /project/src/gui/Gui.h:30:
+/opt/devkitpro/wut/usr/include/gui/GuiScrollbar.h: In member function 'void GuiScrollbar::setImageArrowDown(GuiImage*)':
+/opt/devkitpro/wut/usr/include/gui/GuiScrollbar.h:89:27: error: 'class GuiButton' has no member named 'setSize'
+   89 |             arrowDownBtn->setSize(img->getWidth(), img->getHeight());
+      |                           ^~~~~~~
+/opt/devkitpro/wut/usr/include/gui/GuiScrollbar.h:89:40: error: 'class GuiImage' has no member named 'getWidth'
+   89 |             arrowDownBtn->setSize(img->getWidth(), img->getHeight());
+      |                                        ^~~~~~~~
+/opt/devkitpro/wut/usr/include/gui/GuiScrollbar.h:89:57: error: 'class GuiImage' has no member named 'getHeight'; did you mean 'float GuiElement::height'? (not accessible from this context)
+   89 |             arrowDownBtn->setSize(img->getWidth(), img->getHeight());
+      |                                                         ^~~~~~~~~
+/project/src/gui/GuiElement.h:563:11: note: declared protected here
+  563 |     float height;                  //!< Element height
+      |           ^~~~~~
+/opt/devkitpro/wut/usr/include/gui/GuiScrollbar.h: In member function 'void GuiScrollbar::setImageArrowUp(GuiImage*)':
+/opt/devkitpro/wut/usr/include/gui/GuiScrollbar.h:97:25: error: 'class GuiButton' has no member named 'setSize'
+   97 |             arrowUpBtn->setSize(img->getWidth(), img->getHeight());
+      |                         ^~~~~~~
+/opt/devkitpro/wut/usr/include/gui/GuiScrollbar.h:97:38: error: 'class GuiImage' has no member named 'getWidth'
+   97 |             arrowUpBtn->setSize(img->getWidth(), img->getHeight());
+      |                                      ^~~~~~~~
+/opt/devkitpro/wut/usr/include/gui/GuiScrollbar.h:97:55: error: 'class GuiImage' has no member named 'getHeight'; did you mean 'float GuiElement::height'? (not accessible from this context)
+   97 |             arrowUpBtn->setSize(img->getWidth(), img->getHeight());
+      |                                                       ^~~~~~~~~
+/project/src/gui/GuiElement.h:563:11: note: declared protected here
+  563 |     float height;                  //!< Element height
+      |           ^~~~~~
+/opt/devkitpro/wut/usr/include/gui/GuiScrollbar.h: In member function 'void GuiScrollbar::setImageScrollbarBox(GuiImage*)':
+/opt/devkitpro/wut/usr/include/gui/GuiScrollbar.h:105:30: error: 'class GuiButton' has no member named 'setSize'
+  105 |             scrollbarBoxBtn->setSize(img->getWidth(), height);
+      |                              ^~~~~~~
+/opt/devkitpro/wut/usr/include/gui/GuiScrollbar.h:105:43: error: 'class GuiImage' has no member named 'getWidth'
+  105 |             scrollbarBoxBtn->setSize(img->getWidth(), height);
+      |                                           ^~~~~~~~
+/opt/devkitpro/wut/usr/include/gui/GuiScrollbar.h:108:26: error: 'class GuiImage' has no member named 'getWidth'
+  108 |             width = img->getWidth();
+      |                          ^~~~~~~~
+/opt/devkitpro/wut/usr/include/gui/GuiScrollbar.h:110:54: error: 'class GuiImage' has no member named 'getHeight'; did you mean 'float GuiElement::height'? (not accessible from this context)
+  110 |             MaxHeight = height * 0.5f - (img ? (img->getHeight() * 0.5f) : 0) - (arrowUpImage ? arrowUpImage->getHeight() : 0);
+      |                                                      ^~~~~~~~~
+/project/src/gui/GuiElement.h:563:11: note: declared protected here
+  563 |     float height;                  //!< Element height
+      |           ^~~~~~
+/opt/devkitpro/wut/usr/include/gui/GuiScrollbar.h:110:111: error: 'class GuiImage' has no member named 'getHeight'; did you mean 'float GuiElement::height'? (not accessible from this context)
+  110 |             MaxHeight = height * 0.5f - (img ? (img->getHeight() * 0.5f) : 0) - (arrowUpImage ? arrowUpImage->getHeight() : 0);
+      |                                                                                                               ^~~~~~~~~
+/project/src/gui/GuiElement.h:563:11: note: declared protected here
+  563 |     float height;                  //!< Element height
+      |           ^~~~~~
+/opt/devkitpro/wut/usr/include/gui/GuiScrollbar.h:111:55: error: 'class GuiImage' has no member named 'getHeight'; did you mean 'float GuiElement::height'? (not accessible from this context)
+  111 |             MinHeight = -height * 0.5f + (img ? (img->getHeight() * 0.5f) : 0) + (arrowDownImage ? arrowDownImage->getHeight() : 0);
+      |                                                       ^~~~~~~~~
+/project/src/gui/GuiElement.h:563:11: note: declared protected here
+  563 |     float height;                  //!< Element height
+      |           ^~~~~~
+/opt/devkitpro/wut/usr/include/gui/GuiScrollbar.h:111:116: error: 'class GuiImage' has no member named 'getHeight'; did you mean 'float GuiElement::height'? (not accessible from this context)
+  111 |             MinHeight = -height * 0.5f + (img ? (img->getHeight() * 0.5f) : 0) + (arrowDownImage ? arrowDownImage->getHeight() : 0);
+      |                                                                                                                    ^~~~~~~~~
+/project/src/gui/GuiElement.h:563:11: note: declared protected here
+  563 |     float height;                  //!< Element height
+      |           ^~~~~~
+/project/src/menu/MainDrcButtonsFrame.h: In constructor 'MainDrcButtonsFrame::MainDrcButtonsFrame(int32_t, int32_t)':
+/project/src/menu/MainDrcButtonsFrame.h:25:73: error: 'class GuiImage' has no member named 'getWidth'
+   25 |           settingsIcon(settingsIconData), switchLayoutButton(switchIcon.getWidth(), switchIcon.getHeight()), settingsButton(settingsIcon.getWidth(), settingsIcon.getHeight()),
+      |                                                                         ^~~~~~~~
+/project/src/menu/MainDrcButtonsFrame.h:25:96: error: 'class GuiImage' has no member named 'getHeight'; did you mean 'float GuiElement::height'? (not accessible from this context)
+   25 |           settingsIcon(settingsIconData), switchLayoutButton(switchIcon.getWidth(), switchIcon.getHeight()), settingsButton(settingsIcon.getWidth(), settingsIcon.getHeight()),
+      |                                                                                                ^~~~~~~~~
+/project/src/gui/GuiElement.h:563:11: note: declared protected here
+  563 |     float height;                  //!< Element height
+      |           ^~~~~~
+/project/src/menu/MainDrcButtonsFrame.h:25:138: error: 'class GuiImage' has no member named 'getWidth'
+   25 |           settingsIcon(settingsIconData), switchLayoutButton(switchIcon.getWidth(), switchIcon.getHeight()), settingsButton(settingsIcon.getWidth(), settingsIcon.getHeight()),
+      |                                                                                                                                          ^~~~~~~~
+/project/src/menu/MainDrcButtonsFrame.h:25:163: error: 'class GuiImage' has no member named 'getHeight'; did you mean 'float GuiElement::height'? (not accessible from this context)
+   25 |           settingsIcon(settingsIconData), switchLayoutButton(switchIcon.getWidth(), switchIcon.getHeight()), settingsButton(settingsIcon.getWidth(), settingsIcon.getHeight()),
+      |                                                                                                                                                                   ^~~~~~~~~
+/project/src/gui/GuiElement.h:563:11: note: declared protected here
+  563 |     float height;                  //!< Element height
+      |           ^~~~~~
+make[1]: *** [/opt/devkitpro/devkitPPC/base_rules:15: GameList.o] Error 1
+/project/src/gui/GameIcon.cpp: In member function 'bool GameIcon::checkRayIntersection(const glm::vec3&, const glm::vec3&)':
+/project/src/gui/GameIcon.cpp:125:44: error: 'getWidth' was not declared in this scope; did you mean 'getuid'?
+  125 |   float currScaleX = getScaleX() * (float) getWidth() * Application::instance() -> getVideo() -> getWidthScaleFactor();
+      |                                            ^~~~~~~~
+      |                                            getuid
+/project/src/gui/GameIcon.cpp:126:44: error: 'getHeight' was not declared in this scope; did you mean 'height'?
+  126 |   float currScaleY = getScaleY() * (float) getHeight() * Application::instance() -> getVideo() -> getHeightScaleFactor();
+      |                                            ^~~~~~~~~
+      |                                            height
+/project/src/gui/GameIcon.cpp: In member function 'void GameIcon::draw(CVideo*, const glm::mat4&, const glm::mat4&, const glm::mat4&)':
+/project/src/gui/GameIcon.cpp:169:44: error: 'getWidth' was not declared in this scope; did you mean 'getuid'?
+  169 |   float currScaleX = getScaleX() * (float) getWidth() * pVideo -> getWidthScaleFactor();
+      |                                            ^~~~~~~~
+      |                                            getuid
+/project/src/gui/GameIcon.cpp:170:44: error: 'getHeight' was not declared in this scope; did you mean 'height'?
+  170 |   float currScaleY = getScaleY() * (float) getHeight() * pVideo -> getHeightScaleFactor();
+      |                                            ^~~~~~~~~
+      |                                            height
+make[1]: *** [/opt/devkitpro/devkitPPC/base_rules:15: GameIcon.o] Error 1
+make: *** [Makefile:110: build] Error 2
