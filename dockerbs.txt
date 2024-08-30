@@ -1,0 +1,56 @@
+➜  workspace git:(master) ✗ docker run -it --rm -v ${PWD}:/project launchiine-builder make -j2
+iconEmpty.png
+layoutSwitchButton.png
+leftArrow.png
+noGameIcon.png
+rightArrow.png
+settingsButton.png
+bgMusic.ogg
+bootSound.mp3
+button_click.mp3
+settings_click_2.mp3
+font.ttf
+Application.cpp
+entry.cpp
+In file included from /project/src/gui/GuiElement.h:12,
+                 from /project/src/gui/GuiImage.h:4,
+                 from /opt/devkitpro/wut/usr/include/gui/GuiImageAsync.h:22,
+                 from /project/src/gui/GameBgImage.h:4,
+                 from /project/src/gui/Gui.h:18,
+                 from /project/src/menu/MainDrcButtonsFrame.h:17,
+                 from /project/src/menu/MainWindow.h:18,
+                 from /project/src/Application.h:4,
+                 from /project/src/entry.cpp:1:
+/project/src/gui/GuiImageData.h:10:40: error: expected class-name before '{' token
+   10 | class GuiImageData : public GuiElement {
+      |                                        ^
+In file included from /project/src/gui/GuiElement.h:12,
+                 from /project/src/gui/GuiImage.h:4,
+                 from /opt/devkitpro/wut/usr/include/gui/GuiImageAsync.h:22,
+                 from /project/src/gui/GameBgImage.h:4,
+                 from /project/src/gui/Gui.h:18,
+                 from /project/src/menu/MainDrcButtonsFrame.h:17,
+                 from /project/src/menu/MainWindow.h:18,
+                 from /project/src/Application.h:4,
+                 from /project/src/Application.cpp:1:
+/project/src/gui/GuiImageData.h:10:40: error: expected class-name before '{' token
+   10 | class GuiImageData : public GuiElement {
+      |                                        ^
+/project/src/gui/GuiImage.h:46:10: warning: 'virtual void GuiImage::draw(CVideo*)' was hidden [-Woverloaded-virtual=]
+   46 |     void draw(CVideo *pVideo) override;
+      |          ^~~~
+In file included from /project/src/gui/Gui.h:19:
+/opt/devkitpro/wut/usr/include/gui/GridBackground.h:24:10: note:   by 'void GridBackground::draw(CVideo*, const glm::mat4&)'
+   24 |     void draw(CVideo *pVideo, const glm::mat4 &modelView);
+      |          ^~~~
+/project/src/gui/GuiImage.h:46:10: warning: 'virtual void GuiImage::draw(CVideo*)' was hidden [-Woverloaded-virtual=]
+   46 |     void draw(CVideo *pVideo) override;
+      |          ^~~~
+In file included from /project/src/gui/Gui.h:19:
+/opt/devkitpro/wut/usr/include/gui/GridBackground.h:24:10: note:   by 'void GridBackground::draw(CVideo*, const glm::mat4&)'
+   24 |     void draw(CVideo *pVideo, const glm::mat4 &modelView);
+      |          ^~~~
+make[1]: *** [/opt/devkitpro/devkitPPC/base_rules:15: entry.o] Error 1
+make[1]: *** Waiting for unfinished jobs....
+make[1]: *** [/opt/devkitpro/devkitPPC/base_rules:15: Application.o] Error 1
+make: *** [Makefile:110: build] Error 2
